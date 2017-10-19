@@ -50,21 +50,21 @@ ruby -Ilib script.rb
 ## Getting Started
 
 Please follow the [installation](#installation) procedure and then run the following code:
+
 ```ruby
 # Load the gem
 require 'rbflagr'
 
-api_instance = Flagr::ConstraintApi.new
+cfg  = Flagr::Configuration.new
+cfg.host = "127.0.0.1:18000"
+api_client = Flagr::ApiClient.new(cfg)
+evaluation_api = Flagr::EvaluationApi.new(api_client)
 
-flag_id = 789 # Integer | numeric ID of the flag
-
-segment_id = 789 # Integer | numeric ID of the segment
-
-body = Flagr::CreateConstraintRequest.new # CreateConstraintRequest | create a constraint
-
+body = Flagr::CreateConstraintRequest.new
+body.build_from_hash({:entityID=>"127", :entityType=>"user", :entityContext=>{:state=>"NY"}, :enableDebug=>true, :flagID=>2})
 
 begin
-  result = api_instance.create_constraint(flag_id, segment_id, body)
+  result = evaluation_api.post_evaluation(body)
   p result
 rescue Flagr::ApiError => e
   puts "Exception when calling ConstraintApi->create_constraint: #{e}"

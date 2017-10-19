@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     rbflagr (0.1.0)
-      json (~> 2.1, >= 2.1.0)
+      json
       typhoeus (~> 1.0, >= 1.0.1)
 
 GEM
