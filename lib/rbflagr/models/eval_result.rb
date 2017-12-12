@@ -17,9 +17,15 @@ module Flagr
   class EvalResult
     attr_accessor :flag_id
 
+    attr_accessor :flag_snapshot_id
+
     attr_accessor :segment_id
 
     attr_accessor :variant_id
+
+    attr_accessor :variant_key
+
+    attr_accessor :variant_attachment
 
     attr_accessor :eval_context
 
@@ -27,19 +33,19 @@ module Flagr
 
     attr_accessor :eval_debug_log
 
-    attr_accessor :variant_attachment
-
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
         :'flag_id' => :'flagID',
+        :'flag_snapshot_id' => :'flagSnapshotID',
         :'segment_id' => :'segmentID',
         :'variant_id' => :'variantID',
+        :'variant_key' => :'variantKey',
+        :'variant_attachment' => :'variantAttachment',
         :'eval_context' => :'evalContext',
         :'timestamp' => :'timestamp',
-        :'eval_debug_log' => :'evalDebugLog',
-        :'variant_attachment' => :'variantAttachment'
+        :'eval_debug_log' => :'evalDebugLog'
       }
     end
 
@@ -47,12 +53,14 @@ module Flagr
     def self.swagger_types
       {
         :'flag_id' => :'Integer',
+        :'flag_snapshot_id' => :'Integer',
         :'segment_id' => :'Integer',
         :'variant_id' => :'Integer',
+        :'variant_key' => :'String',
+        :'variant_attachment' => :'Object',
         :'eval_context' => :'EvalContext',
         :'timestamp' => :'String',
-        :'eval_debug_log' => :'EvalDebugLog',
-        :'variant_attachment' => :'Object'
+        :'eval_debug_log' => :'EvalDebugLog'
       }
     end
 
@@ -68,12 +76,24 @@ module Flagr
         self.flag_id = attributes[:'flagID']
       end
 
+      if attributes.has_key?(:'flagSnapshotID')
+        self.flag_snapshot_id = attributes[:'flagSnapshotID']
+      end
+
       if attributes.has_key?(:'segmentID')
         self.segment_id = attributes[:'segmentID']
       end
 
       if attributes.has_key?(:'variantID')
         self.variant_id = attributes[:'variantID']
+      end
+
+      if attributes.has_key?(:'variantKey')
+        self.variant_key = attributes[:'variantKey']
+      end
+
+      if attributes.has_key?(:'variantAttachment')
+        self.variant_attachment = attributes[:'variantAttachment']
       end
 
       if attributes.has_key?(:'evalContext')
@@ -88,14 +108,10 @@ module Flagr
         self.eval_debug_log = attributes[:'evalDebugLog']
       end
 
-      if attributes.has_key?(:'variantAttachment')
-        self.variant_attachment = attributes[:'variantAttachment']
-      end
-
     end
 
     # Show invalid properties with the reasons. Usually used together with valid?
-    # @return Array for valid properies with the reasons
+    # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
       if @flag_id.nil?
@@ -122,6 +138,18 @@ module Flagr
         invalid_properties.push("invalid value for 'variant_id', must be greater than or equal to 1.")
       end
 
+      if @variant_key.nil?
+        invalid_properties.push("invalid value for 'variant_key', variant_key cannot be nil.")
+      end
+
+      if @variant_key.to_s.length < 1
+        invalid_properties.push("invalid value for 'variant_key', the character length must be great than or equal to 1.")
+      end
+
+      if @variant_attachment.nil?
+        invalid_properties.push("invalid value for 'variant_attachment', variant_attachment cannot be nil.")
+      end
+
       if @eval_context.nil?
         invalid_properties.push("invalid value for 'eval_context', eval_context cannot be nil.")
       end
@@ -146,6 +174,9 @@ module Flagr
       return false if @segment_id < 1
       return false if @variant_id.nil?
       return false if @variant_id < 1
+      return false if @variant_key.nil?
+      return false if @variant_key.to_s.length < 1
+      return false if @variant_attachment.nil?
       return false if @eval_context.nil?
       return false if @timestamp.nil?
       return false if @timestamp.to_s.length < 1
@@ -195,6 +226,20 @@ module Flagr
     end
 
     # Custom attribute writer method with validation
+    # @param [Object] variant_key Value to be assigned
+    def variant_key=(variant_key)
+      if variant_key.nil?
+        fail ArgumentError, "variant_key cannot be nil"
+      end
+
+      if variant_key.to_s.length < 1
+        fail ArgumentError, "invalid value for 'variant_key', the character length must be great than or equal to 1."
+      end
+
+      @variant_key = variant_key
+    end
+
+    # Custom attribute writer method with validation
     # @param [Object] timestamp Value to be assigned
     def timestamp=(timestamp)
       if timestamp.nil?
@@ -214,12 +259,14 @@ module Flagr
       return true if self.equal?(o)
       self.class == o.class &&
           flag_id == o.flag_id &&
+          flag_snapshot_id == o.flag_snapshot_id &&
           segment_id == o.segment_id &&
           variant_id == o.variant_id &&
+          variant_key == o.variant_key &&
+          variant_attachment == o.variant_attachment &&
           eval_context == o.eval_context &&
           timestamp == o.timestamp &&
-          eval_debug_log == o.eval_debug_log &&
-          variant_attachment == o.variant_attachment
+          eval_debug_log == o.eval_debug_log
     end
 
     # @see the `==` method
@@ -231,7 +278,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [flag_id, segment_id, variant_id, eval_context, timestamp, eval_debug_log, variant_attachment].hash
+      [flag_id, flag_snapshot_id, segment_id, variant_id, variant_key, variant_attachment, eval_context, timestamp, eval_debug_log].hash
     end
 
     # Builds the object from hash

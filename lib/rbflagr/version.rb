@@ -11,5 +11,5 @@ Swagger Codegen version: 2.3.0-SNAPSHOT
 =end
 
 module Flagr
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
 end

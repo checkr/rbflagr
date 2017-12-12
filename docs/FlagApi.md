@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**delete_flag**](FlagApi.md#delete_flag) | **DELETE** /flags/{flagID} | 
 [**find_flags**](FlagApi.md#find_flags) | **GET** /flags | 
 [**get_flag**](FlagApi.md#get_flag) | **GET** /flags/{flagID} | 
+[**get_flag_snapshots**](FlagApi.md#get_flag_snapshots) | **GET** /flags/{flagID}/snapshots | 
 [**put_flag**](FlagApi.md#put_flag) | **PUT** /flags/{flagID} | 
 [**set_flag_enabled**](FlagApi.md#set_flag_enabled) | **PUT** /flags/{flagID}/enabled | 
 
@@ -169,6 +170,50 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Flag**](Flag.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **get_flag_snapshots**
+> Array&lt;FlagSnapshot&gt; get_flag_snapshots(flag_id)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'rbflagr'
+
+api_instance = Flagr::FlagApi.new
+
+flag_id = 789 # Integer | numeric ID of the flag to get
+
+
+begin
+  result = api_instance.get_flag_snapshots(flag_id)
+  p result
+rescue Flagr::ApiError => e
+  puts "Exception when calling FlagApi->get_flag_snapshots: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **flag_id** | **Integer**| numeric ID of the flag to get | 
+
+### Return type
+
+[**Array&lt;FlagSnapshot&gt;**](FlagSnapshot.md)
 
 ### Authorization
 

@@ -14,21 +14,21 @@ require 'date'
 
 module Flagr
 
-  class Error
-    attr_accessor :message
+  class EvaluationBatchResponse
+    attr_accessor :evaluation_results
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'message' => :'message'
+        :'evaluation_results' => :'evaluationResults'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'message' => :'String'
+        :'evaluation_results' => :'Array<EvalResult>'
       }
     end
 
@@ -40,8 +40,10 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'message')
-        self.message = attributes[:'message']
+      if attributes.has_key?(:'evaluationResults')
+        if (value = attributes[:'evaluationResults']).is_a?(Array)
+          self.evaluation_results = value
+        end
       end
 
     end
@@ -50,12 +52,8 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @message.nil?
-        invalid_properties.push("invalid value for 'message', message cannot be nil.")
-      end
-
-      if @message.to_s.length < 1
-        invalid_properties.push("invalid value for 'message', the character length must be great than or equal to 1.")
+      if @evaluation_results.nil?
+        invalid_properties.push("invalid value for 'evaluation_results', evaluation_results cannot be nil.")
       end
 
       return invalid_properties
@@ -64,23 +62,8 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @message.nil?
-      return false if @message.to_s.length < 1
+      return false if @evaluation_results.nil?
       return true
-    end
-
-    # Custom attribute writer method with validation
-    # @param [Object] message Value to be assigned
-    def message=(message)
-      if message.nil?
-        fail ArgumentError, "message cannot be nil"
-      end
-
-      if message.to_s.length < 1
-        fail ArgumentError, "invalid value for 'message', the character length must be great than or equal to 1."
-      end
-
-      @message = message
     end
 
     # Checks equality by comparing each attribute.
@@ -88,7 +71,7 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          message == o.message
+          evaluation_results == o.evaluation_results
     end
 
     # @see the `==` method
@@ -100,7 +83,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [message].hash
+      [evaluation_results].hash
     end
 
     # Builds the object from hash

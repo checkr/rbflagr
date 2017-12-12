@@ -14,21 +14,29 @@ require 'date'
 
 module Flagr
 
-  class Error
-    attr_accessor :message
+  class EvaluationEntity
+    attr_accessor :entity_id
+
+    attr_accessor :entity_type
+
+    attr_accessor :entity_context
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'message' => :'message'
+        :'entity_id' => :'entityID',
+        :'entity_type' => :'entityType',
+        :'entity_context' => :'entityContext'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'message' => :'String'
+        :'entity_id' => :'String',
+        :'entity_type' => :'String',
+        :'entity_context' => :'Object'
       }
     end
 
@@ -40,8 +48,16 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'message')
-        self.message = attributes[:'message']
+      if attributes.has_key?(:'entityID')
+        self.entity_id = attributes[:'entityID']
+      end
+
+      if attributes.has_key?(:'entityType')
+        self.entity_type = attributes[:'entityType']
+      end
+
+      if attributes.has_key?(:'entityContext')
+        self.entity_context = attributes[:'entityContext']
       end
 
     end
@@ -50,12 +66,20 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @message.nil?
-        invalid_properties.push("invalid value for 'message', message cannot be nil.")
+      if @entity_id.nil?
+        invalid_properties.push("invalid value for 'entity_id', entity_id cannot be nil.")
       end
 
-      if @message.to_s.length < 1
-        invalid_properties.push("invalid value for 'message', the character length must be great than or equal to 1.")
+      if @entity_id.to_s.length < 1
+        invalid_properties.push("invalid value for 'entity_id', the character length must be great than or equal to 1.")
+      end
+
+      if @entity_type.nil?
+        invalid_properties.push("invalid value for 'entity_type', entity_type cannot be nil.")
+      end
+
+      if @entity_type.to_s.length < 1
+        invalid_properties.push("invalid value for 'entity_type', the character length must be great than or equal to 1.")
       end
 
       return invalid_properties
@@ -64,23 +88,39 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @message.nil?
-      return false if @message.to_s.length < 1
+      return false if @entity_id.nil?
+      return false if @entity_id.to_s.length < 1
+      return false if @entity_type.nil?
+      return false if @entity_type.to_s.length < 1
       return true
     end
 
     # Custom attribute writer method with validation
-    # @param [Object] message Value to be assigned
-    def message=(message)
-      if message.nil?
-        fail ArgumentError, "message cannot be nil"
+    # @param [Object] entity_id Value to be assigned
+    def entity_id=(entity_id)
+      if entity_id.nil?
+        fail ArgumentError, "entity_id cannot be nil"
       end
 
-      if message.to_s.length < 1
-        fail ArgumentError, "invalid value for 'message', the character length must be great than or equal to 1."
+      if entity_id.to_s.length < 1
+        fail ArgumentError, "invalid value for 'entity_id', the character length must be great than or equal to 1."
       end
 
-      @message = message
+      @entity_id = entity_id
+    end
+
+    # Custom attribute writer method with validation
+    # @param [Object] entity_type Value to be assigned
+    def entity_type=(entity_type)
+      if entity_type.nil?
+        fail ArgumentError, "entity_type cannot be nil"
+      end
+
+      if entity_type.to_s.length < 1
+        fail ArgumentError, "invalid value for 'entity_type', the character length must be great than or equal to 1."
+      end
+
+      @entity_type = entity_type
     end
 
     # Checks equality by comparing each attribute.
@@ -88,7 +128,9 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          message == o.message
+          entity_id == o.entity_id &&
+          entity_type == o.entity_type &&
+          entity_context == o.entity_context
     end
 
     # @see the `==` method
@@ -100,7 +142,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [message].hash
+      [entity_id, entity_type, entity_context].hash
     end
 
     # Builds the object from hash
