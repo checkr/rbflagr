@@ -14,21 +14,29 @@ require 'date'
 
 module Flagr
 
-  class Error
-    attr_accessor :message
+  class EvaluationBatchRequest
+    attr_accessor :entities
+
+    attr_accessor :enable_debug
+
+    attr_accessor :flag_i_ds
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'message' => :'message'
+        :'entities' => :'entities',
+        :'enable_debug' => :'enableDebug',
+        :'flag_i_ds' => :'flagIDs'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'message' => :'String'
+        :'entities' => :'Array<EvaluationEntity>',
+        :'enable_debug' => :'BOOLEAN',
+        :'flag_i_ds' => :'Array<Integer>'
       }
     end
 
@@ -40,8 +48,20 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'message')
-        self.message = attributes[:'message']
+      if attributes.has_key?(:'entities')
+        if (value = attributes[:'entities']).is_a?(Array)
+          self.entities = value
+        end
+      end
+
+      if attributes.has_key?(:'enableDebug')
+        self.enable_debug = attributes[:'enableDebug']
+      end
+
+      if attributes.has_key?(:'flagIDs')
+        if (value = attributes[:'flagIDs']).is_a?(Array)
+          self.flag_i_ds = value
+        end
       end
 
     end
@@ -50,12 +70,12 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @message.nil?
-        invalid_properties.push("invalid value for 'message', message cannot be nil.")
+      if @entities.nil?
+        invalid_properties.push("invalid value for 'entities', entities cannot be nil.")
       end
 
-      if @message.to_s.length < 1
-        invalid_properties.push("invalid value for 'message', the character length must be great than or equal to 1.")
+      if @flag_i_ds.nil?
+        invalid_properties.push("invalid value for 'flag_i_ds', flag_i_ds cannot be nil.")
       end
 
       return invalid_properties
@@ -64,23 +84,9 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @message.nil?
-      return false if @message.to_s.length < 1
+      return false if @entities.nil?
+      return false if @flag_i_ds.nil?
       return true
-    end
-
-    # Custom attribute writer method with validation
-    # @param [Object] message Value to be assigned
-    def message=(message)
-      if message.nil?
-        fail ArgumentError, "message cannot be nil"
-      end
-
-      if message.to_s.length < 1
-        fail ArgumentError, "invalid value for 'message', the character length must be great than or equal to 1."
-      end
-
-      @message = message
     end
 
     # Checks equality by comparing each attribute.
@@ -88,7 +94,9 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          message == o.message
+          entities == o.entities &&
+          enable_debug == o.enable_debug &&
+          flag_i_ds == o.flag_i_ds
     end
 
     # @see the `==` method
@@ -100,7 +108,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [message].hash
+      [entities, enable_debug, flag_i_ds].hash
     end
 
     # Builds the object from hash

@@ -14,21 +14,33 @@ require 'date'
 
 module Flagr
 
-  class Error
-    attr_accessor :message
+  class FlagSnapshot
+    attr_accessor :id
+
+    attr_accessor :updated_by
+
+    attr_accessor :flag
+
+    attr_accessor :updated_at
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'message' => :'message'
+        :'id' => :'id',
+        :'updated_by' => :'updatedBy',
+        :'flag' => :'flag',
+        :'updated_at' => :'updatedAt'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'message' => :'String'
+        :'id' => :'Integer',
+        :'updated_by' => :'String',
+        :'flag' => :'Flag',
+        :'updated_at' => :'String'
       }
     end
 
@@ -40,8 +52,20 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'message')
-        self.message = attributes[:'message']
+      if attributes.has_key?(:'id')
+        self.id = attributes[:'id']
+      end
+
+      if attributes.has_key?(:'updatedBy')
+        self.updated_by = attributes[:'updatedBy']
+      end
+
+      if attributes.has_key?(:'flag')
+        self.flag = attributes[:'flag']
+      end
+
+      if attributes.has_key?(:'updatedAt')
+        self.updated_at = attributes[:'updatedAt']
       end
 
     end
@@ -50,12 +74,24 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @message.nil?
-        invalid_properties.push("invalid value for 'message', message cannot be nil.")
+      if @id.nil?
+        invalid_properties.push("invalid value for 'id', id cannot be nil.")
       end
 
-      if @message.to_s.length < 1
-        invalid_properties.push("invalid value for 'message', the character length must be great than or equal to 1.")
+      if @id < 1
+        invalid_properties.push("invalid value for 'id', must be greater than or equal to 1.")
+      end
+
+      if @flag.nil?
+        invalid_properties.push("invalid value for 'flag', flag cannot be nil.")
+      end
+
+      if @updated_at.nil?
+        invalid_properties.push("invalid value for 'updated_at', updated_at cannot be nil.")
+      end
+
+      if @updated_at.to_s.length < 1
+        invalid_properties.push("invalid value for 'updated_at', the character length must be great than or equal to 1.")
       end
 
       return invalid_properties
@@ -64,23 +100,40 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @message.nil?
-      return false if @message.to_s.length < 1
+      return false if @id.nil?
+      return false if @id < 1
+      return false if @flag.nil?
+      return false if @updated_at.nil?
+      return false if @updated_at.to_s.length < 1
       return true
     end
 
     # Custom attribute writer method with validation
-    # @param [Object] message Value to be assigned
-    def message=(message)
-      if message.nil?
-        fail ArgumentError, "message cannot be nil"
+    # @param [Object] id Value to be assigned
+    def id=(id)
+      if id.nil?
+        fail ArgumentError, "id cannot be nil"
       end
 
-      if message.to_s.length < 1
-        fail ArgumentError, "invalid value for 'message', the character length must be great than or equal to 1."
+      if id < 1
+        fail ArgumentError, "invalid value for 'id', must be greater than or equal to 1."
       end
 
-      @message = message
+      @id = id
+    end
+
+    # Custom attribute writer method with validation
+    # @param [Object] updated_at Value to be assigned
+    def updated_at=(updated_at)
+      if updated_at.nil?
+        fail ArgumentError, "updated_at cannot be nil"
+      end
+
+      if updated_at.to_s.length < 1
+        fail ArgumentError, "invalid value for 'updated_at', the character length must be great than or equal to 1."
+      end
+
+      @updated_at = updated_at
     end
 
     # Checks equality by comparing each attribute.
@@ -88,7 +141,10 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          message == o.message
+          id == o.id &&
+          updated_by == o.updated_by &&
+          flag == o.flag &&
+          updated_at == o.updated_at
     end
 
     # @see the `==` method
@@ -100,7 +156,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [message].hash
+      [id, updated_by, flag, updated_at].hash
     end
 
     # Builds the object from hash

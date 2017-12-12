@@ -1,0 +1,618 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+==	lib/rbflagr/models/constraint.rb	/^    def ==(o)$/;"	f	class:Flagr.Constraint
+==	lib/rbflagr/models/create_constraint_request.rb	/^    def ==(o)$/;"	f	class:Flagr.CreateConstraintRequest
+==	lib/rbflagr/models/create_flag_request.rb	/^    def ==(o)$/;"	f	class:Flagr.CreateFlagRequest
+==	lib/rbflagr/models/create_segment_request.rb	/^    def ==(o)$/;"	f	class:Flagr.CreateSegmentRequest
+==	lib/rbflagr/models/create_variant_request.rb	/^    def ==(o)$/;"	f	class:Flagr.CreateVariantRequest
+==	lib/rbflagr/models/distribution.rb	/^    def ==(o)$/;"	f	class:Flagr.Distribution
+==	lib/rbflagr/models/error.rb	/^    def ==(o)$/;"	f	class:Flagr.Error
+==	lib/rbflagr/models/eval_context.rb	/^    def ==(o)$/;"	f	class:Flagr.EvalContext
+==	lib/rbflagr/models/eval_debug_log.rb	/^    def ==(o)$/;"	f	class:Flagr.EvalDebugLog
+==	lib/rbflagr/models/eval_result.rb	/^    def ==(o)$/;"	f	class:Flagr.EvalResult
+==	lib/rbflagr/models/flag.rb	/^    def ==(o)$/;"	f	class:Flagr.Flag
+==	lib/rbflagr/models/put_distributions_request.rb	/^    def ==(o)$/;"	f	class:Flagr.PutDistributionsRequest
+==	lib/rbflagr/models/put_flag_request.rb	/^    def ==(o)$/;"	f	class:Flagr.PutFlagRequest
+==	lib/rbflagr/models/put_segment_request.rb	/^    def ==(o)$/;"	f	class:Flagr.PutSegmentRequest
+==	lib/rbflagr/models/put_variant_request.rb	/^    def ==(o)$/;"	f	class:Flagr.PutVariantRequest
+==	lib/rbflagr/models/segment.rb	/^    def ==(o)$/;"	f	class:Flagr.Segment
+==	lib/rbflagr/models/segment_debug_log.rb	/^    def ==(o)$/;"	f	class:Flagr.SegmentDebugLog
+==	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def ==(o)$/;"	f	class:Flagr.SetFlagEnabledRequest
+==	lib/rbflagr/models/variant.rb	/^    def ==(o)$/;"	f	class:Flagr.Variant
+ApiClient	lib/rbflagr/api_client.rb	/^  class ApiClient$/;"	c	class:Flagr
+ApiError	lib/rbflagr/api_error.rb	/^  class ApiError < StandardError$/;"	c	class:Flagr	inherits:StandardError
+Configuration	lib/rbflagr/configuration.rb	/^  class Configuration$/;"	c	class:Flagr
+Constraint	lib/rbflagr/models/constraint.rb	/^  class Constraint$/;"	c	class:Flagr
+ConstraintApi	lib/rbflagr/api/constraint_api.rb	/^  class ConstraintApi$/;"	c	class:Flagr
+CreateConstraintRequest	lib/rbflagr/models/create_constraint_request.rb	/^  class CreateConstraintRequest$/;"	c	class:Flagr
+CreateFlagRequest	lib/rbflagr/models/create_flag_request.rb	/^  class CreateFlagRequest$/;"	c	class:Flagr
+CreateSegmentRequest	lib/rbflagr/models/create_segment_request.rb	/^  class CreateSegmentRequest$/;"	c	class:Flagr
+CreateVariantRequest	lib/rbflagr/models/create_variant_request.rb	/^  class CreateVariantRequest$/;"	c	class:Flagr
+Distribution	lib/rbflagr/models/distribution.rb	/^  class Distribution$/;"	c	class:Flagr
+DistributionApi	lib/rbflagr/api/distribution_api.rb	/^  class DistributionApi$/;"	c	class:Flagr
+EnumAttributeValidator	lib/rbflagr/models/constraint.rb	/^    class EnumAttributeValidator$/;"	c	class:Flagr.Constraint
+Error	lib/rbflagr/models/error.rb	/^  class Error$/;"	c	class:Flagr
+EvalContext	lib/rbflagr/models/eval_context.rb	/^  class EvalContext$/;"	c	class:Flagr
+EvalDebugLog	lib/rbflagr/models/eval_debug_log.rb	/^  class EvalDebugLog$/;"	c	class:Flagr
+EvalResult	lib/rbflagr/models/eval_result.rb	/^  class EvalResult$/;"	c	class:Flagr
+EvaluationApi	lib/rbflagr/api/evaluation_api.rb	/^  class EvaluationApi$/;"	c	class:Flagr
+Flag	lib/rbflagr/models/flag.rb	/^  class Flag$/;"	c	class:Flagr
+FlagApi	lib/rbflagr/api/flag_api.rb	/^  class FlagApi$/;"	c	class:Flagr
+Flagr	lib/rbflagr.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/constraint_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/distribution_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/evaluation_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/flag_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/segment_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api/variant_api.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api_client.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/api_error.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/configuration.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/constraint.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/create_constraint_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/create_flag_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/create_segment_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/create_variant_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/distribution.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/error.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/eval_context.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/eval_debug_log.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/eval_result.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/flag.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/put_distributions_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/put_flag_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/put_segment_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/put_variant_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/segment.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/segment_debug_log.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/set_flag_enabled_request.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/models/variant.rb	/^module Flagr$/;"	m
+Flagr	lib/rbflagr/version.rb	/^module Flagr$/;"	m
+PutDistributionsRequest	lib/rbflagr/models/put_distributions_request.rb	/^  class PutDistributionsRequest$/;"	c	class:Flagr
+PutFlagRequest	lib/rbflagr/models/put_flag_request.rb	/^  class PutFlagRequest$/;"	c	class:Flagr
+PutSegmentRequest	lib/rbflagr/models/put_segment_request.rb	/^  class PutSegmentRequest$/;"	c	class:Flagr
+PutVariantRequest	lib/rbflagr/models/put_variant_request.rb	/^  class PutVariantRequest$/;"	c	class:Flagr
+Segment	lib/rbflagr/models/segment.rb	/^  class Segment$/;"	c	class:Flagr
+SegmentApi	lib/rbflagr/api/segment_api.rb	/^  class SegmentApi$/;"	c	class:Flagr
+SegmentDebugLog	lib/rbflagr/models/segment_debug_log.rb	/^  class SegmentDebugLog$/;"	c	class:Flagr
+SetFlagEnabledRequest	lib/rbflagr/models/set_flag_enabled_request.rb	/^  class SetFlagEnabledRequest$/;"	c	class:Flagr
+VERSION	lib/rbflagr/version.rb	/^  VERSION = "0.1.0"$/;"	C	class:Flagr
+Variant	lib/rbflagr/models/variant.rb	/^  class Variant$/;"	c	class:Flagr
+VariantApi	lib/rbflagr/api/variant_api.rb	/^  class VariantApi$/;"	c	class:Flagr
+_deserialize	lib/rbflagr/models/constraint.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Constraint
+_deserialize	lib/rbflagr/models/create_constraint_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.CreateConstraintRequest
+_deserialize	lib/rbflagr/models/create_flag_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.CreateFlagRequest
+_deserialize	lib/rbflagr/models/create_segment_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.CreateSegmentRequest
+_deserialize	lib/rbflagr/models/create_variant_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.CreateVariantRequest
+_deserialize	lib/rbflagr/models/distribution.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Distribution
+_deserialize	lib/rbflagr/models/error.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Error
+_deserialize	lib/rbflagr/models/eval_context.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.EvalContext
+_deserialize	lib/rbflagr/models/eval_debug_log.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.EvalDebugLog
+_deserialize	lib/rbflagr/models/eval_result.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.EvalResult
+_deserialize	lib/rbflagr/models/flag.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Flag
+_deserialize	lib/rbflagr/models/put_distributions_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.PutDistributionsRequest
+_deserialize	lib/rbflagr/models/put_flag_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.PutFlagRequest
+_deserialize	lib/rbflagr/models/put_segment_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.PutSegmentRequest
+_deserialize	lib/rbflagr/models/put_variant_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.PutVariantRequest
+_deserialize	lib/rbflagr/models/segment.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Segment
+_deserialize	lib/rbflagr/models/segment_debug_log.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.SegmentDebugLog
+_deserialize	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.SetFlagEnabledRequest
+_deserialize	lib/rbflagr/models/variant.rb	/^    def _deserialize(type, value)$/;"	f	class:Flagr.Variant
+_to_hash	lib/rbflagr/models/constraint.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Constraint
+_to_hash	lib/rbflagr/models/create_constraint_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.CreateConstraintRequest
+_to_hash	lib/rbflagr/models/create_flag_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.CreateFlagRequest
+_to_hash	lib/rbflagr/models/create_segment_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.CreateSegmentRequest
+_to_hash	lib/rbflagr/models/create_variant_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.CreateVariantRequest
+_to_hash	lib/rbflagr/models/distribution.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Distribution
+_to_hash	lib/rbflagr/models/error.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Error
+_to_hash	lib/rbflagr/models/eval_context.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.EvalContext
+_to_hash	lib/rbflagr/models/eval_debug_log.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.EvalDebugLog
+_to_hash	lib/rbflagr/models/eval_result.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.EvalResult
+_to_hash	lib/rbflagr/models/flag.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Flag
+_to_hash	lib/rbflagr/models/put_distributions_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.PutDistributionsRequest
+_to_hash	lib/rbflagr/models/put_flag_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.PutFlagRequest
+_to_hash	lib/rbflagr/models/put_segment_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.PutSegmentRequest
+_to_hash	lib/rbflagr/models/put_variant_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.PutVariantRequest
+_to_hash	lib/rbflagr/models/segment.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Segment
+_to_hash	lib/rbflagr/models/segment_debug_log.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.SegmentDebugLog
+_to_hash	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.SetFlagEnabledRequest
+_to_hash	lib/rbflagr/models/variant.rb	/^    def _to_hash(value)$/;"	f	class:Flagr.Variant
+access_token	lib/rbflagr/configuration.rb	/^    attr_accessor :access_token$/;"	f	class:Flagr.Configuration
+access_token=	lib/rbflagr/configuration.rb	/^    attr_accessor :access_token$/;"	f	class:Flagr.Configuration
+allowable_values	lib/rbflagr/models/constraint.rb	/^      attr_reader :allowable_values$/;"	f	class:Flagr.Constraint.EnumAttributeValidator
+api_client	lib/rbflagr/api/constraint_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.ConstraintApi
+api_client	lib/rbflagr/api/distribution_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.DistributionApi
+api_client	lib/rbflagr/api/evaluation_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.EvaluationApi
+api_client	lib/rbflagr/api/flag_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.FlagApi
+api_client	lib/rbflagr/api/segment_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.SegmentApi
+api_client	lib/rbflagr/api/variant_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.VariantApi
+api_client=	lib/rbflagr/api/constraint_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.ConstraintApi
+api_client=	lib/rbflagr/api/distribution_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.DistributionApi
+api_client=	lib/rbflagr/api/evaluation_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.EvaluationApi
+api_client=	lib/rbflagr/api/flag_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.FlagApi
+api_client=	lib/rbflagr/api/segment_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.SegmentApi
+api_client=	lib/rbflagr/api/variant_api.rb	/^    attr_accessor :api_client$/;"	f	class:Flagr.VariantApi
+api_key	lib/rbflagr/configuration.rb	/^    attr_accessor :api_key$/;"	f	class:Flagr.Configuration
+api_key=	lib/rbflagr/configuration.rb	/^    attr_accessor :api_key$/;"	f	class:Flagr.Configuration
+api_key_prefix	lib/rbflagr/configuration.rb	/^    attr_accessor :api_key_prefix$/;"	f	class:Flagr.Configuration
+api_key_prefix=	lib/rbflagr/configuration.rb	/^    attr_accessor :api_key_prefix$/;"	f	class:Flagr.Configuration
+api_key_with_prefix	lib/rbflagr/configuration.rb	/^    def api_key_with_prefix(param_name)$/;"	f	class:Flagr.Configuration
+attachment	lib/rbflagr/models/create_variant_request.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.CreateVariantRequest
+attachment	lib/rbflagr/models/put_variant_request.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.PutVariantRequest
+attachment	lib/rbflagr/models/variant.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.Variant
+attachment=	lib/rbflagr/models/create_variant_request.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.CreateVariantRequest
+attachment=	lib/rbflagr/models/put_variant_request.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.PutVariantRequest
+attachment=	lib/rbflagr/models/variant.rb	/^    attr_accessor :attachment$/;"	f	class:Flagr.Variant
+attribute_map	lib/rbflagr/models/constraint.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Constraint
+attribute_map	lib/rbflagr/models/create_constraint_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.CreateConstraintRequest
+attribute_map	lib/rbflagr/models/create_flag_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.CreateFlagRequest
+attribute_map	lib/rbflagr/models/create_segment_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.CreateSegmentRequest
+attribute_map	lib/rbflagr/models/create_variant_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.CreateVariantRequest
+attribute_map	lib/rbflagr/models/distribution.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Distribution
+attribute_map	lib/rbflagr/models/error.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Error
+attribute_map	lib/rbflagr/models/eval_context.rb	/^    def self.attribute_map$/;"	F	class:Flagr.EvalContext
+attribute_map	lib/rbflagr/models/eval_debug_log.rb	/^    def self.attribute_map$/;"	F	class:Flagr.EvalDebugLog
+attribute_map	lib/rbflagr/models/eval_result.rb	/^    def self.attribute_map$/;"	F	class:Flagr.EvalResult
+attribute_map	lib/rbflagr/models/flag.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Flag
+attribute_map	lib/rbflagr/models/put_distributions_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.PutDistributionsRequest
+attribute_map	lib/rbflagr/models/put_flag_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.PutFlagRequest
+attribute_map	lib/rbflagr/models/put_segment_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.PutSegmentRequest
+attribute_map	lib/rbflagr/models/put_variant_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.PutVariantRequest
+attribute_map	lib/rbflagr/models/segment.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Segment
+attribute_map	lib/rbflagr/models/segment_debug_log.rb	/^    def self.attribute_map$/;"	F	class:Flagr.SegmentDebugLog
+attribute_map	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def self.attribute_map$/;"	F	class:Flagr.SetFlagEnabledRequest
+attribute_map	lib/rbflagr/models/variant.rb	/^    def self.attribute_map$/;"	F	class:Flagr.Variant
+auth_settings	lib/rbflagr/configuration.rb	/^    def auth_settings$/;"	f	class:Flagr.Configuration
+base_path	lib/rbflagr/configuration.rb	/^    attr_accessor :base_path$/;"	f	class:Flagr.Configuration
+base_path=	lib/rbflagr/configuration.rb	/^    attr_accessor :base_path$/;"	f	class:Flagr.Configuration
+base_path=	lib/rbflagr/configuration.rb	/^    def base_path=(base_path)$/;"	f	class:Flagr.Configuration
+base_url	lib/rbflagr/configuration.rb	/^    def base_url$/;"	f	class:Flagr.Configuration
+basic_auth_token	lib/rbflagr/configuration.rb	/^    def basic_auth_token$/;"	f	class:Flagr.Configuration
+bitmap	lib/rbflagr/models/distribution.rb	/^    attr_accessor :bitmap$/;"	f	class:Flagr.Distribution
+bitmap=	lib/rbflagr/models/distribution.rb	/^    attr_accessor :bitmap$/;"	f	class:Flagr.Distribution
+bitmap=	lib/rbflagr/models/distribution.rb	/^    def bitmap=(bitmap)$/;"	f	class:Flagr.Distribution
+build_collection_param	lib/rbflagr/api_client.rb	/^    def build_collection_param(param, collection_format)$/;"	f	class:Flagr.ApiClient
+build_from_hash	lib/rbflagr/models/constraint.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Constraint
+build_from_hash	lib/rbflagr/models/create_constraint_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.CreateConstraintRequest
+build_from_hash	lib/rbflagr/models/create_flag_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.CreateFlagRequest
+build_from_hash	lib/rbflagr/models/create_segment_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.CreateSegmentRequest
+build_from_hash	lib/rbflagr/models/create_variant_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.CreateVariantRequest
+build_from_hash	lib/rbflagr/models/distribution.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Distribution
+build_from_hash	lib/rbflagr/models/error.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Error
+build_from_hash	lib/rbflagr/models/eval_context.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.EvalContext
+build_from_hash	lib/rbflagr/models/eval_debug_log.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.EvalDebugLog
+build_from_hash	lib/rbflagr/models/eval_result.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.EvalResult
+build_from_hash	lib/rbflagr/models/flag.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Flag
+build_from_hash	lib/rbflagr/models/put_distributions_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.PutDistributionsRequest
+build_from_hash	lib/rbflagr/models/put_flag_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.PutFlagRequest
+build_from_hash	lib/rbflagr/models/put_segment_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.PutSegmentRequest
+build_from_hash	lib/rbflagr/models/put_variant_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.PutVariantRequest
+build_from_hash	lib/rbflagr/models/segment.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Segment
+build_from_hash	lib/rbflagr/models/segment_debug_log.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.SegmentDebugLog
+build_from_hash	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.SetFlagEnabledRequest
+build_from_hash	lib/rbflagr/models/variant.rb	/^    def build_from_hash(attributes)$/;"	f	class:Flagr.Variant
+build_request	lib/rbflagr/api_client.rb	/^    def build_request(http_method, path, opts = {})$/;"	f	class:Flagr.ApiClient
+build_request_body	lib/rbflagr/api_client.rb	/^    def build_request_body(header_params, form_params, body)$/;"	f	class:Flagr.ApiClient
+build_request_url	lib/rbflagr/api_client.rb	/^    def build_request_url(path)$/;"	f	class:Flagr.ApiClient
+call_api	lib/rbflagr/api_client.rb	/^    def call_api(http_method, path, opts = {})$/;"	f	class:Flagr.ApiClient
+cert_file	lib/rbflagr/configuration.rb	/^    attr_accessor :cert_file$/;"	f	class:Flagr.Configuration
+cert_file=	lib/rbflagr/configuration.rb	/^    attr_accessor :cert_file$/;"	f	class:Flagr.Configuration
+client_side_validation	lib/rbflagr/configuration.rb	/^    attr_accessor :client_side_validation$/;"	f	class:Flagr.Configuration
+client_side_validation=	lib/rbflagr/configuration.rb	/^    attr_accessor :client_side_validation$/;"	f	class:Flagr.Configuration
+code	lib/rbflagr/api_error.rb	/^    attr_reader :code, :response_headers, :response_body$/;"	f	class:Flagr.ApiError
+config	lib/rbflagr/api_client.rb	/^    attr_accessor :config$/;"	f	class:Flagr.ApiClient
+config=	lib/rbflagr/api_client.rb	/^    attr_accessor :config$/;"	f	class:Flagr.ApiClient
+configure	lib/rbflagr.rb	/^    def configure$/;"	F	class:Flagr
+configure	lib/rbflagr/configuration.rb	/^    def configure$/;"	f	class:Flagr.Configuration
+constraints	lib/rbflagr/models/segment.rb	/^    attr_accessor :constraints$/;"	f	class:Flagr.Segment
+constraints=	lib/rbflagr/models/segment.rb	/^    attr_accessor :constraints$/;"	f	class:Flagr.Segment
+convert_to_type	lib/rbflagr/api_client.rb	/^    def convert_to_type(data, return_type)$/;"	f	class:Flagr.ApiClient
+create_constraint	lib/rbflagr/api/constraint_api.rb	/^    def create_constraint(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.ConstraintApi
+create_constraint_with_http_info	lib/rbflagr/api/constraint_api.rb	/^    def create_constraint_with_http_info(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.ConstraintApi
+create_flag	lib/rbflagr/api/flag_api.rb	/^    def create_flag(body, opts = {})$/;"	f	class:Flagr.FlagApi
+create_flag_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def create_flag_with_http_info(body, opts = {})$/;"	f	class:Flagr.FlagApi
+create_segment	lib/rbflagr/api/segment_api.rb	/^    def create_segment(flag_id, body, opts = {})$/;"	f	class:Flagr.SegmentApi
+create_segment_with_http_info	lib/rbflagr/api/segment_api.rb	/^    def create_segment_with_http_info(flag_id, body, opts = {})$/;"	f	class:Flagr.SegmentApi
+create_variant	lib/rbflagr/api/variant_api.rb	/^    def create_variant(flag_id, body, opts = {})$/;"	f	class:Flagr.VariantApi
+create_variant_with_http_info	lib/rbflagr/api/variant_api.rb	/^    def create_variant_with_http_info(flag_id, body, opts = {})$/;"	f	class:Flagr.VariantApi
+datatype	lib/rbflagr/models/constraint.rb	/^      attr_reader :datatype$/;"	f	class:Flagr.Constraint.EnumAttributeValidator
+debugging	lib/rbflagr/configuration.rb	/^    attr_accessor :debugging$/;"	f	class:Flagr.Configuration
+debugging=	lib/rbflagr/configuration.rb	/^    attr_accessor :debugging$/;"	f	class:Flagr.Configuration
+default	lib/rbflagr/api_client.rb	/^    def self.default$/;"	F	class:Flagr.ApiClient
+default	lib/rbflagr/configuration.rb	/^    def self.default$/;"	F	class:Flagr.Configuration
+default_headers	lib/rbflagr/api_client.rb	/^    attr_accessor :default_headers$/;"	f	class:Flagr.ApiClient
+default_headers=	lib/rbflagr/api_client.rb	/^    attr_accessor :default_headers$/;"	f	class:Flagr.ApiClient
+delete_constraint	lib/rbflagr/api/constraint_api.rb	/^    def delete_constraint(flag_id, segment_id, constraint_id, opts = {})$/;"	f	class:Flagr.ConstraintApi
+delete_constraint_with_http_info	lib/rbflagr/api/constraint_api.rb	/^    def delete_constraint_with_http_info(flag_id, segment_id, constraint_id, opts = {})$/;"	f	class:Flagr.ConstraintApi
+delete_flag	lib/rbflagr/api/flag_api.rb	/^    def delete_flag(flag_id, opts = {})$/;"	f	class:Flagr.FlagApi
+delete_flag_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def delete_flag_with_http_info(flag_id, opts = {})$/;"	f	class:Flagr.FlagApi
+delete_segment	lib/rbflagr/api/segment_api.rb	/^    def delete_segment(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.SegmentApi
+delete_segment_with_http_info	lib/rbflagr/api/segment_api.rb	/^    def delete_segment_with_http_info(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.SegmentApi
+delete_variant	lib/rbflagr/api/variant_api.rb	/^    def delete_variant(flag_id, variant_id, opts = {})$/;"	f	class:Flagr.VariantApi
+delete_variant_with_http_info	lib/rbflagr/api/variant_api.rb	/^    def delete_variant_with_http_info(flag_id, variant_id, opts = {})$/;"	f	class:Flagr.VariantApi
+description	lib/rbflagr/models/create_flag_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.CreateFlagRequest
+description	lib/rbflagr/models/create_segment_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.CreateSegmentRequest
+description	lib/rbflagr/models/flag.rb	/^    attr_accessor :description$/;"	f	class:Flagr.Flag
+description	lib/rbflagr/models/put_flag_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.PutFlagRequest
+description	lib/rbflagr/models/put_segment_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.PutSegmentRequest
+description	lib/rbflagr/models/segment.rb	/^    attr_accessor :description$/;"	f	class:Flagr.Segment
+description=	lib/rbflagr/models/create_flag_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.CreateFlagRequest
+description=	lib/rbflagr/models/create_flag_request.rb	/^    def description=(description)$/;"	f	class:Flagr.CreateFlagRequest
+description=	lib/rbflagr/models/create_segment_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.CreateSegmentRequest
+description=	lib/rbflagr/models/create_segment_request.rb	/^    def description=(description)$/;"	f	class:Flagr.CreateSegmentRequest
+description=	lib/rbflagr/models/flag.rb	/^    attr_accessor :description$/;"	f	class:Flagr.Flag
+description=	lib/rbflagr/models/flag.rb	/^    def description=(description)$/;"	f	class:Flagr.Flag
+description=	lib/rbflagr/models/put_flag_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.PutFlagRequest
+description=	lib/rbflagr/models/put_flag_request.rb	/^    def description=(description)$/;"	f	class:Flagr.PutFlagRequest
+description=	lib/rbflagr/models/put_segment_request.rb	/^    attr_accessor :description$/;"	f	class:Flagr.PutSegmentRequest
+description=	lib/rbflagr/models/put_segment_request.rb	/^    def description=(description)$/;"	f	class:Flagr.PutSegmentRequest
+description=	lib/rbflagr/models/segment.rb	/^    attr_accessor :description$/;"	f	class:Flagr.Segment
+description=	lib/rbflagr/models/segment.rb	/^    def description=(description)$/;"	f	class:Flagr.Segment
+deserialize	lib/rbflagr/api_client.rb	/^    def deserialize(response, return_type)$/;"	f	class:Flagr.ApiClient
+distributions	lib/rbflagr/models/put_distributions_request.rb	/^    attr_accessor :distributions$/;"	f	class:Flagr.PutDistributionsRequest
+distributions	lib/rbflagr/models/segment.rb	/^    attr_accessor :distributions$/;"	f	class:Flagr.Segment
+distributions=	lib/rbflagr/models/put_distributions_request.rb	/^    attr_accessor :distributions$/;"	f	class:Flagr.PutDistributionsRequest
+distributions=	lib/rbflagr/models/segment.rb	/^    attr_accessor :distributions$/;"	f	class:Flagr.Segment
+download_file	lib/rbflagr/api_client.rb	/^    def download_file(request)$/;"	f	class:Flagr.ApiClient
+enable_debug	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :enable_debug$/;"	f	class:Flagr.EvalContext
+enable_debug=	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :enable_debug$/;"	f	class:Flagr.EvalContext
+enabled	lib/rbflagr/models/flag.rb	/^    attr_accessor :enabled$/;"	f	class:Flagr.Flag
+enabled	lib/rbflagr/models/set_flag_enabled_request.rb	/^    attr_accessor :enabled$/;"	f	class:Flagr.SetFlagEnabledRequest
+enabled=	lib/rbflagr/models/flag.rb	/^    attr_accessor :enabled$/;"	f	class:Flagr.Flag
+enabled=	lib/rbflagr/models/set_flag_enabled_request.rb	/^    attr_accessor :enabled$/;"	f	class:Flagr.SetFlagEnabledRequest
+entity_context	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_context$/;"	f	class:Flagr.EvalContext
+entity_context=	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_context$/;"	f	class:Flagr.EvalContext
+entity_id	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_id$/;"	f	class:Flagr.EvalContext
+entity_id=	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_id$/;"	f	class:Flagr.EvalContext
+entity_id=	lib/rbflagr/models/eval_context.rb	/^    def entity_id=(entity_id)$/;"	f	class:Flagr.EvalContext
+entity_type	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_type$/;"	f	class:Flagr.EvalContext
+entity_type=	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :entity_type$/;"	f	class:Flagr.EvalContext
+entity_type=	lib/rbflagr/models/eval_context.rb	/^    def entity_type=(entity_type)$/;"	f	class:Flagr.EvalContext
+eql?	lib/rbflagr/models/constraint.rb	/^    def eql?(o)$/;"	f	class:Flagr.Constraint
+eql?	lib/rbflagr/models/create_constraint_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.CreateConstraintRequest
+eql?	lib/rbflagr/models/create_flag_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.CreateFlagRequest
+eql?	lib/rbflagr/models/create_segment_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.CreateSegmentRequest
+eql?	lib/rbflagr/models/create_variant_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.CreateVariantRequest
+eql?	lib/rbflagr/models/distribution.rb	/^    def eql?(o)$/;"	f	class:Flagr.Distribution
+eql?	lib/rbflagr/models/error.rb	/^    def eql?(o)$/;"	f	class:Flagr.Error
+eql?	lib/rbflagr/models/eval_context.rb	/^    def eql?(o)$/;"	f	class:Flagr.EvalContext
+eql?	lib/rbflagr/models/eval_debug_log.rb	/^    def eql?(o)$/;"	f	class:Flagr.EvalDebugLog
+eql?	lib/rbflagr/models/eval_result.rb	/^    def eql?(o)$/;"	f	class:Flagr.EvalResult
+eql?	lib/rbflagr/models/flag.rb	/^    def eql?(o)$/;"	f	class:Flagr.Flag
+eql?	lib/rbflagr/models/put_distributions_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.PutDistributionsRequest
+eql?	lib/rbflagr/models/put_flag_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.PutFlagRequest
+eql?	lib/rbflagr/models/put_segment_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.PutSegmentRequest
+eql?	lib/rbflagr/models/put_variant_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.PutVariantRequest
+eql?	lib/rbflagr/models/segment.rb	/^    def eql?(o)$/;"	f	class:Flagr.Segment
+eql?	lib/rbflagr/models/segment_debug_log.rb	/^    def eql?(o)$/;"	f	class:Flagr.SegmentDebugLog
+eql?	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def eql?(o)$/;"	f	class:Flagr.SetFlagEnabledRequest
+eql?	lib/rbflagr/models/variant.rb	/^    def eql?(o)$/;"	f	class:Flagr.Variant
+eval_context	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :eval_context$/;"	f	class:Flagr.EvalResult
+eval_context=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :eval_context$/;"	f	class:Flagr.EvalResult
+eval_debug_log	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :eval_debug_log$/;"	f	class:Flagr.EvalResult
+eval_debug_log=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :eval_debug_log$/;"	f	class:Flagr.EvalResult
+find_constraints	lib/rbflagr/api/constraint_api.rb	/^    def find_constraints(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.ConstraintApi
+find_constraints_with_http_info	lib/rbflagr/api/constraint_api.rb	/^    def find_constraints_with_http_info(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.ConstraintApi
+find_distributions	lib/rbflagr/api/distribution_api.rb	/^    def find_distributions(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.DistributionApi
+find_distributions_with_http_info	lib/rbflagr/api/distribution_api.rb	/^    def find_distributions_with_http_info(flag_id, segment_id, opts = {})$/;"	f	class:Flagr.DistributionApi
+find_flags	lib/rbflagr/api/flag_api.rb	/^    def find_flags(opts = {})$/;"	f	class:Flagr.FlagApi
+find_flags_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def find_flags_with_http_info(opts = {})$/;"	f	class:Flagr.FlagApi
+find_segments	lib/rbflagr/api/segment_api.rb	/^    def find_segments(flag_id, opts = {})$/;"	f	class:Flagr.SegmentApi
+find_segments_with_http_info	lib/rbflagr/api/segment_api.rb	/^    def find_segments_with_http_info(flag_id, opts = {})$/;"	f	class:Flagr.SegmentApi
+find_variants	lib/rbflagr/api/variant_api.rb	/^    def find_variants(flag_id, opts = {})$/;"	f	class:Flagr.VariantApi
+find_variants_with_http_info	lib/rbflagr/api/variant_api.rb	/^    def find_variants_with_http_info(flag_id, opts = {})$/;"	f	class:Flagr.VariantApi
+flag_id	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :flag_id$/;"	f	class:Flagr.EvalContext
+flag_id	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :flag_id$/;"	f	class:Flagr.EvalResult
+flag_id=	lib/rbflagr/models/eval_context.rb	/^    attr_accessor :flag_id$/;"	f	class:Flagr.EvalContext
+flag_id=	lib/rbflagr/models/eval_context.rb	/^    def flag_id=(flag_id)$/;"	f	class:Flagr.EvalContext
+flag_id=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :flag_id$/;"	f	class:Flagr.EvalResult
+flag_id=	lib/rbflagr/models/eval_result.rb	/^    def flag_id=(flag_id)$/;"	f	class:Flagr.EvalResult
+force_ending_format	lib/rbflagr/configuration.rb	/^    attr_accessor :force_ending_format$/;"	f	class:Flagr.Configuration
+force_ending_format=	lib/rbflagr/configuration.rb	/^    attr_accessor :force_ending_format$/;"	f	class:Flagr.Configuration
+get_flag	lib/rbflagr/api/flag_api.rb	/^    def get_flag(flag_id, opts = {})$/;"	f	class:Flagr.FlagApi
+get_flag_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def get_flag_with_http_info(flag_id, opts = {})$/;"	f	class:Flagr.FlagApi
+hash	lib/rbflagr/models/constraint.rb	/^    def hash$/;"	f	class:Flagr.Constraint
+hash	lib/rbflagr/models/create_constraint_request.rb	/^    def hash$/;"	f	class:Flagr.CreateConstraintRequest
+hash	lib/rbflagr/models/create_flag_request.rb	/^    def hash$/;"	f	class:Flagr.CreateFlagRequest
+hash	lib/rbflagr/models/create_segment_request.rb	/^    def hash$/;"	f	class:Flagr.CreateSegmentRequest
+hash	lib/rbflagr/models/create_variant_request.rb	/^    def hash$/;"	f	class:Flagr.CreateVariantRequest
+hash	lib/rbflagr/models/distribution.rb	/^    def hash$/;"	f	class:Flagr.Distribution
+hash	lib/rbflagr/models/error.rb	/^    def hash$/;"	f	class:Flagr.Error
+hash	lib/rbflagr/models/eval_context.rb	/^    def hash$/;"	f	class:Flagr.EvalContext
+hash	lib/rbflagr/models/eval_debug_log.rb	/^    def hash$/;"	f	class:Flagr.EvalDebugLog
+hash	lib/rbflagr/models/eval_result.rb	/^    def hash$/;"	f	class:Flagr.EvalResult
+hash	lib/rbflagr/models/flag.rb	/^    def hash$/;"	f	class:Flagr.Flag
+hash	lib/rbflagr/models/put_distributions_request.rb	/^    def hash$/;"	f	class:Flagr.PutDistributionsRequest
+hash	lib/rbflagr/models/put_flag_request.rb	/^    def hash$/;"	f	class:Flagr.PutFlagRequest
+hash	lib/rbflagr/models/put_segment_request.rb	/^    def hash$/;"	f	class:Flagr.PutSegmentRequest
+hash	lib/rbflagr/models/put_variant_request.rb	/^    def hash$/;"	f	class:Flagr.PutVariantRequest
+hash	lib/rbflagr/models/segment.rb	/^    def hash$/;"	f	class:Flagr.Segment
+hash	lib/rbflagr/models/segment_debug_log.rb	/^    def hash$/;"	f	class:Flagr.SegmentDebugLog
+hash	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def hash$/;"	f	class:Flagr.SetFlagEnabledRequest
+hash	lib/rbflagr/models/variant.rb	/^    def hash$/;"	f	class:Flagr.Variant
+host	lib/rbflagr/configuration.rb	/^    attr_accessor :host$/;"	f	class:Flagr.Configuration
+host=	lib/rbflagr/configuration.rb	/^    attr_accessor :host$/;"	f	class:Flagr.Configuration
+host=	lib/rbflagr/configuration.rb	/^    def host=(host)$/;"	f	class:Flagr.Configuration
+id	lib/rbflagr/models/constraint.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Constraint
+id	lib/rbflagr/models/distribution.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Distribution
+id	lib/rbflagr/models/flag.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Flag
+id	lib/rbflagr/models/segment.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Segment
+id	lib/rbflagr/models/variant.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Variant
+id=	lib/rbflagr/models/constraint.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Constraint
+id=	lib/rbflagr/models/constraint.rb	/^    def id=(id)$/;"	f	class:Flagr.Constraint
+id=	lib/rbflagr/models/distribution.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Distribution
+id=	lib/rbflagr/models/distribution.rb	/^    def id=(id)$/;"	f	class:Flagr.Distribution
+id=	lib/rbflagr/models/flag.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Flag
+id=	lib/rbflagr/models/flag.rb	/^    def id=(id)$/;"	f	class:Flagr.Flag
+id=	lib/rbflagr/models/segment.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Segment
+id=	lib/rbflagr/models/segment.rb	/^    def id=(id)$/;"	f	class:Flagr.Segment
+id=	lib/rbflagr/models/variant.rb	/^    attr_accessor :id$/;"	f	class:Flagr.Variant
+id=	lib/rbflagr/models/variant.rb	/^    def id=(id)$/;"	f	class:Flagr.Variant
+initialize	lib/rbflagr/api/constraint_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.ConstraintApi
+initialize	lib/rbflagr/api/distribution_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.DistributionApi
+initialize	lib/rbflagr/api/evaluation_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.EvaluationApi
+initialize	lib/rbflagr/api/flag_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.FlagApi
+initialize	lib/rbflagr/api/segment_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.SegmentApi
+initialize	lib/rbflagr/api/variant_api.rb	/^    def initialize(api_client = ApiClient.default)$/;"	f	class:Flagr.VariantApi
+initialize	lib/rbflagr/api_client.rb	/^    def initialize(config = Configuration.default)$/;"	f	class:Flagr.ApiClient
+initialize	lib/rbflagr/api_error.rb	/^    def initialize(arg = nil)$/;"	f	class:Flagr.ApiError
+initialize	lib/rbflagr/configuration.rb	/^    def initialize$/;"	f	class:Flagr.Configuration
+initialize	lib/rbflagr/models/constraint.rb	/^      def initialize(datatype, allowable_values)$/;"	f	class:Flagr.Constraint.EnumAttributeValidator
+initialize	lib/rbflagr/models/constraint.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Constraint
+initialize	lib/rbflagr/models/create_constraint_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.CreateConstraintRequest
+initialize	lib/rbflagr/models/create_flag_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.CreateFlagRequest
+initialize	lib/rbflagr/models/create_segment_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.CreateSegmentRequest
+initialize	lib/rbflagr/models/create_variant_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.CreateVariantRequest
+initialize	lib/rbflagr/models/distribution.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Distribution
+initialize	lib/rbflagr/models/error.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Error
+initialize	lib/rbflagr/models/eval_context.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.EvalContext
+initialize	lib/rbflagr/models/eval_debug_log.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.EvalDebugLog
+initialize	lib/rbflagr/models/eval_result.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.EvalResult
+initialize	lib/rbflagr/models/flag.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Flag
+initialize	lib/rbflagr/models/put_distributions_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.PutDistributionsRequest
+initialize	lib/rbflagr/models/put_flag_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.PutFlagRequest
+initialize	lib/rbflagr/models/put_segment_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.PutSegmentRequest
+initialize	lib/rbflagr/models/put_variant_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.PutVariantRequest
+initialize	lib/rbflagr/models/segment.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Segment
+initialize	lib/rbflagr/models/segment_debug_log.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.SegmentDebugLog
+initialize	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.SetFlagEnabledRequest
+initialize	lib/rbflagr/models/variant.rb	/^    def initialize(attributes = {})$/;"	f	class:Flagr.Variant
+inject_format	lib/rbflagr/configuration.rb	/^    attr_accessor :inject_format$/;"	f	class:Flagr.Configuration
+inject_format=	lib/rbflagr/configuration.rb	/^    attr_accessor :inject_format$/;"	f	class:Flagr.Configuration
+json_mime?	lib/rbflagr/api_client.rb	/^    def json_mime?(mime)$/;"	f	class:Flagr.ApiClient
+key	lib/rbflagr/models/create_variant_request.rb	/^    attr_accessor :key$/;"	f	class:Flagr.CreateVariantRequest
+key	lib/rbflagr/models/put_variant_request.rb	/^    attr_accessor :key$/;"	f	class:Flagr.PutVariantRequest
+key	lib/rbflagr/models/variant.rb	/^    attr_accessor :key$/;"	f	class:Flagr.Variant
+key=	lib/rbflagr/models/create_variant_request.rb	/^    attr_accessor :key$/;"	f	class:Flagr.CreateVariantRequest
+key=	lib/rbflagr/models/create_variant_request.rb	/^    def key=(key)$/;"	f	class:Flagr.CreateVariantRequest
+key=	lib/rbflagr/models/put_variant_request.rb	/^    attr_accessor :key$/;"	f	class:Flagr.PutVariantRequest
+key=	lib/rbflagr/models/put_variant_request.rb	/^    def key=(key)$/;"	f	class:Flagr.PutVariantRequest
+key=	lib/rbflagr/models/variant.rb	/^    attr_accessor :key$/;"	f	class:Flagr.Variant
+key=	lib/rbflagr/models/variant.rb	/^    def key=(key)$/;"	f	class:Flagr.Variant
+key_file	lib/rbflagr/configuration.rb	/^    attr_accessor :key_file$/;"	f	class:Flagr.Configuration
+key_file=	lib/rbflagr/configuration.rb	/^    attr_accessor :key_file$/;"	f	class:Flagr.Configuration
+list_invalid_properties	lib/rbflagr/models/constraint.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Constraint
+list_invalid_properties	lib/rbflagr/models/create_constraint_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.CreateConstraintRequest
+list_invalid_properties	lib/rbflagr/models/create_flag_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.CreateFlagRequest
+list_invalid_properties	lib/rbflagr/models/create_segment_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.CreateSegmentRequest
+list_invalid_properties	lib/rbflagr/models/create_variant_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.CreateVariantRequest
+list_invalid_properties	lib/rbflagr/models/distribution.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Distribution
+list_invalid_properties	lib/rbflagr/models/error.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Error
+list_invalid_properties	lib/rbflagr/models/eval_context.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.EvalContext
+list_invalid_properties	lib/rbflagr/models/eval_debug_log.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.EvalDebugLog
+list_invalid_properties	lib/rbflagr/models/eval_result.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.EvalResult
+list_invalid_properties	lib/rbflagr/models/flag.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Flag
+list_invalid_properties	lib/rbflagr/models/put_distributions_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.PutDistributionsRequest
+list_invalid_properties	lib/rbflagr/models/put_flag_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.PutFlagRequest
+list_invalid_properties	lib/rbflagr/models/put_segment_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.PutSegmentRequest
+list_invalid_properties	lib/rbflagr/models/put_variant_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.PutVariantRequest
+list_invalid_properties	lib/rbflagr/models/segment.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Segment
+list_invalid_properties	lib/rbflagr/models/segment_debug_log.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.SegmentDebugLog
+list_invalid_properties	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.SetFlagEnabledRequest
+list_invalid_properties	lib/rbflagr/models/variant.rb	/^    def list_invalid_properties$/;"	f	class:Flagr.Variant
+logger	lib/rbflagr/configuration.rb	/^    attr_accessor :logger$/;"	f	class:Flagr.Configuration
+logger=	lib/rbflagr/configuration.rb	/^    attr_accessor :logger$/;"	f	class:Flagr.Configuration
+message	lib/rbflagr/models/error.rb	/^    attr_accessor :message$/;"	f	class:Flagr.Error
+message=	lib/rbflagr/models/error.rb	/^    attr_accessor :message$/;"	f	class:Flagr.Error
+message=	lib/rbflagr/models/error.rb	/^    def message=(message)$/;"	f	class:Flagr.Error
+msg	lib/rbflagr/models/eval_debug_log.rb	/^    attr_accessor :msg$/;"	f	class:Flagr.EvalDebugLog
+msg	lib/rbflagr/models/segment_debug_log.rb	/^    attr_accessor :msg$/;"	f	class:Flagr.SegmentDebugLog
+msg=	lib/rbflagr/models/eval_debug_log.rb	/^    attr_accessor :msg$/;"	f	class:Flagr.EvalDebugLog
+msg=	lib/rbflagr/models/segment_debug_log.rb	/^    attr_accessor :msg$/;"	f	class:Flagr.SegmentDebugLog
+object_to_hash	lib/rbflagr/api_client.rb	/^    def object_to_hash(obj)$/;"	f	class:Flagr.ApiClient
+object_to_http_body	lib/rbflagr/api_client.rb	/^    def object_to_http_body(model)$/;"	f	class:Flagr.ApiClient
+operator	lib/rbflagr/models/constraint.rb	/^    attr_accessor :operator$/;"	f	class:Flagr.Constraint
+operator	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :operator$/;"	f	class:Flagr.CreateConstraintRequest
+operator=	lib/rbflagr/models/constraint.rb	/^    attr_accessor :operator$/;"	f	class:Flagr.Constraint
+operator=	lib/rbflagr/models/constraint.rb	/^    def operator=(operator)$/;"	f	class:Flagr.Constraint
+operator=	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :operator$/;"	f	class:Flagr.CreateConstraintRequest
+operator=	lib/rbflagr/models/create_constraint_request.rb	/^    def operator=(operator)$/;"	f	class:Flagr.CreateConstraintRequest
+params_encoding	lib/rbflagr/configuration.rb	/^    attr_accessor :params_encoding$/;"	f	class:Flagr.Configuration
+params_encoding=	lib/rbflagr/configuration.rb	/^    attr_accessor :params_encoding$/;"	f	class:Flagr.Configuration
+password	lib/rbflagr/configuration.rb	/^    attr_accessor :password$/;"	f	class:Flagr.Configuration
+password=	lib/rbflagr/configuration.rb	/^    attr_accessor :password$/;"	f	class:Flagr.Configuration
+percent	lib/rbflagr/models/distribution.rb	/^    attr_accessor :percent$/;"	f	class:Flagr.Distribution
+percent=	lib/rbflagr/models/distribution.rb	/^    attr_accessor :percent$/;"	f	class:Flagr.Distribution
+percent=	lib/rbflagr/models/distribution.rb	/^    def percent=(percent)$/;"	f	class:Flagr.Distribution
+post_evaluation	lib/rbflagr/api/evaluation_api.rb	/^    def post_evaluation(body, opts = {})$/;"	f	class:Flagr.EvaluationApi
+post_evaluation_with_http_info	lib/rbflagr/api/evaluation_api.rb	/^    def post_evaluation_with_http_info(body, opts = {})$/;"	f	class:Flagr.EvaluationApi
+property	lib/rbflagr/models/constraint.rb	/^    attr_accessor :property$/;"	f	class:Flagr.Constraint
+property	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :property$/;"	f	class:Flagr.CreateConstraintRequest
+property=	lib/rbflagr/models/constraint.rb	/^    attr_accessor :property$/;"	f	class:Flagr.Constraint
+property=	lib/rbflagr/models/constraint.rb	/^    def property=(property)$/;"	f	class:Flagr.Constraint
+property=	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :property$/;"	f	class:Flagr.CreateConstraintRequest
+property=	lib/rbflagr/models/create_constraint_request.rb	/^    def property=(property)$/;"	f	class:Flagr.CreateConstraintRequest
+put_constraint	lib/rbflagr/api/constraint_api.rb	/^    def put_constraint(flag_id, segment_id, constraint_id, body, opts = {})$/;"	f	class:Flagr.ConstraintApi
+put_constraint_with_http_info	lib/rbflagr/api/constraint_api.rb	/^    def put_constraint_with_http_info(flag_id, segment_id, constraint_id, body, opts = {})$/;"	f	class:Flagr.ConstraintApi
+put_distributions	lib/rbflagr/api/distribution_api.rb	/^    def put_distributions(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.DistributionApi
+put_distributions_with_http_info	lib/rbflagr/api/distribution_api.rb	/^    def put_distributions_with_http_info(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.DistributionApi
+put_flag	lib/rbflagr/api/flag_api.rb	/^    def put_flag(flag_id, body, opts = {})$/;"	f	class:Flagr.FlagApi
+put_flag_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def put_flag_with_http_info(flag_id, body, opts = {})$/;"	f	class:Flagr.FlagApi
+put_segment	lib/rbflagr/api/segment_api.rb	/^    def put_segment(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.SegmentApi
+put_segment_with_http_info	lib/rbflagr/api/segment_api.rb	/^    def put_segment_with_http_info(flag_id, segment_id, body, opts = {})$/;"	f	class:Flagr.SegmentApi
+put_variant	lib/rbflagr/api/variant_api.rb	/^    def put_variant(flag_id, variant_id, body, opts = {})$/;"	f	class:Flagr.VariantApi
+put_variant_with_http_info	lib/rbflagr/api/variant_api.rb	/^    def put_variant_with_http_info(flag_id, variant_id, body, opts = {})$/;"	f	class:Flagr.VariantApi
+rank	lib/rbflagr/models/segment.rb	/^    attr_accessor :rank$/;"	f	class:Flagr.Segment
+rank=	lib/rbflagr/models/segment.rb	/^    attr_accessor :rank$/;"	f	class:Flagr.Segment
+rank=	lib/rbflagr/models/segment.rb	/^    def rank=(rank)$/;"	f	class:Flagr.Segment
+response_body	lib/rbflagr/api_error.rb	/^    attr_reader :code, :response_headers, :response_body$/;"	f	class:Flagr.ApiError
+response_headers	lib/rbflagr/api_error.rb	/^    attr_reader :code, :response_headers, :response_body$/;"	f	class:Flagr.ApiError
+rollout_percent	lib/rbflagr/models/create_segment_request.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.CreateSegmentRequest
+rollout_percent	lib/rbflagr/models/put_segment_request.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.PutSegmentRequest
+rollout_percent	lib/rbflagr/models/segment.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.Segment
+rollout_percent=	lib/rbflagr/models/create_segment_request.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.CreateSegmentRequest
+rollout_percent=	lib/rbflagr/models/create_segment_request.rb	/^    def rollout_percent=(rollout_percent)$/;"	f	class:Flagr.CreateSegmentRequest
+rollout_percent=	lib/rbflagr/models/put_segment_request.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.PutSegmentRequest
+rollout_percent=	lib/rbflagr/models/put_segment_request.rb	/^    def rollout_percent=(rollout_percent)$/;"	f	class:Flagr.PutSegmentRequest
+rollout_percent=	lib/rbflagr/models/segment.rb	/^    attr_accessor :rollout_percent$/;"	f	class:Flagr.Segment
+rollout_percent=	lib/rbflagr/models/segment.rb	/^    def rollout_percent=(rollout_percent)$/;"	f	class:Flagr.Segment
+sanitize_filename	lib/rbflagr/api_client.rb	/^    def sanitize_filename(filename)$/;"	f	class:Flagr.ApiClient
+scheme	lib/rbflagr/configuration.rb	/^    attr_accessor :scheme$/;"	f	class:Flagr.Configuration
+scheme=	lib/rbflagr/configuration.rb	/^    attr_accessor :scheme$/;"	f	class:Flagr.Configuration
+scheme=	lib/rbflagr/configuration.rb	/^    def scheme=(scheme)$/;"	f	class:Flagr.Configuration
+segment_debug_logs	lib/rbflagr/models/eval_debug_log.rb	/^    attr_accessor :segment_debug_logs$/;"	f	class:Flagr.EvalDebugLog
+segment_debug_logs=	lib/rbflagr/models/eval_debug_log.rb	/^    attr_accessor :segment_debug_logs$/;"	f	class:Flagr.EvalDebugLog
+segment_id	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :segment_id$/;"	f	class:Flagr.EvalResult
+segment_id	lib/rbflagr/models/segment_debug_log.rb	/^    attr_accessor :segment_id$/;"	f	class:Flagr.SegmentDebugLog
+segment_id=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :segment_id$/;"	f	class:Flagr.EvalResult
+segment_id=	lib/rbflagr/models/eval_result.rb	/^    def segment_id=(segment_id)$/;"	f	class:Flagr.EvalResult
+segment_id=	lib/rbflagr/models/segment_debug_log.rb	/^    attr_accessor :segment_id$/;"	f	class:Flagr.SegmentDebugLog
+segment_id=	lib/rbflagr/models/segment_debug_log.rb	/^    def segment_id=(segment_id)$/;"	f	class:Flagr.SegmentDebugLog
+segments	lib/rbflagr/models/flag.rb	/^    attr_accessor :segments$/;"	f	class:Flagr.Flag
+segments=	lib/rbflagr/models/flag.rb	/^    attr_accessor :segments$/;"	f	class:Flagr.Flag
+select_header_accept	lib/rbflagr/api_client.rb	/^    def select_header_accept(accepts)$/;"	f	class:Flagr.ApiClient
+select_header_content_type	lib/rbflagr/api_client.rb	/^    def select_header_content_type(content_types)$/;"	f	class:Flagr.ApiClient
+set_flag_enabled	lib/rbflagr/api/flag_api.rb	/^    def set_flag_enabled(flag_id, body, opts = {})$/;"	f	class:Flagr.FlagApi
+set_flag_enabled_with_http_info	lib/rbflagr/api/flag_api.rb	/^    def set_flag_enabled_with_http_info(flag_id, body, opts = {})$/;"	f	class:Flagr.FlagApi
+ssl_ca_cert	lib/rbflagr/configuration.rb	/^    attr_accessor :ssl_ca_cert$/;"	f	class:Flagr.Configuration
+ssl_ca_cert=	lib/rbflagr/configuration.rb	/^    attr_accessor :ssl_ca_cert$/;"	f	class:Flagr.Configuration
+swagger_types	lib/rbflagr/models/constraint.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Constraint
+swagger_types	lib/rbflagr/models/create_constraint_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.CreateConstraintRequest
+swagger_types	lib/rbflagr/models/create_flag_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.CreateFlagRequest
+swagger_types	lib/rbflagr/models/create_segment_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.CreateSegmentRequest
+swagger_types	lib/rbflagr/models/create_variant_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.CreateVariantRequest
+swagger_types	lib/rbflagr/models/distribution.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Distribution
+swagger_types	lib/rbflagr/models/error.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Error
+swagger_types	lib/rbflagr/models/eval_context.rb	/^    def self.swagger_types$/;"	F	class:Flagr.EvalContext
+swagger_types	lib/rbflagr/models/eval_debug_log.rb	/^    def self.swagger_types$/;"	F	class:Flagr.EvalDebugLog
+swagger_types	lib/rbflagr/models/eval_result.rb	/^    def self.swagger_types$/;"	F	class:Flagr.EvalResult
+swagger_types	lib/rbflagr/models/flag.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Flag
+swagger_types	lib/rbflagr/models/put_distributions_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.PutDistributionsRequest
+swagger_types	lib/rbflagr/models/put_flag_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.PutFlagRequest
+swagger_types	lib/rbflagr/models/put_segment_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.PutSegmentRequest
+swagger_types	lib/rbflagr/models/put_variant_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.PutVariantRequest
+swagger_types	lib/rbflagr/models/segment.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Segment
+swagger_types	lib/rbflagr/models/segment_debug_log.rb	/^    def self.swagger_types$/;"	F	class:Flagr.SegmentDebugLog
+swagger_types	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def self.swagger_types$/;"	F	class:Flagr.SetFlagEnabledRequest
+swagger_types	lib/rbflagr/models/variant.rb	/^    def self.swagger_types$/;"	F	class:Flagr.Variant
+temp_folder_path	lib/rbflagr/configuration.rb	/^    attr_accessor :temp_folder_path$/;"	f	class:Flagr.Configuration
+temp_folder_path=	lib/rbflagr/configuration.rb	/^    attr_accessor :temp_folder_path$/;"	f	class:Flagr.Configuration
+timeout	lib/rbflagr/configuration.rb	/^    attr_accessor :timeout$/;"	f	class:Flagr.Configuration
+timeout=	lib/rbflagr/configuration.rb	/^    attr_accessor :timeout$/;"	f	class:Flagr.Configuration
+timestamp	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :timestamp$/;"	f	class:Flagr.EvalResult
+timestamp=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :timestamp$/;"	f	class:Flagr.EvalResult
+timestamp=	lib/rbflagr/models/eval_result.rb	/^    def timestamp=(timestamp)$/;"	f	class:Flagr.EvalResult
+to_body	lib/rbflagr/models/constraint.rb	/^    def to_body$/;"	f	class:Flagr.Constraint
+to_body	lib/rbflagr/models/create_constraint_request.rb	/^    def to_body$/;"	f	class:Flagr.CreateConstraintRequest
+to_body	lib/rbflagr/models/create_flag_request.rb	/^    def to_body$/;"	f	class:Flagr.CreateFlagRequest
+to_body	lib/rbflagr/models/create_segment_request.rb	/^    def to_body$/;"	f	class:Flagr.CreateSegmentRequest
+to_body	lib/rbflagr/models/create_variant_request.rb	/^    def to_body$/;"	f	class:Flagr.CreateVariantRequest
+to_body	lib/rbflagr/models/distribution.rb	/^    def to_body$/;"	f	class:Flagr.Distribution
+to_body	lib/rbflagr/models/error.rb	/^    def to_body$/;"	f	class:Flagr.Error
+to_body	lib/rbflagr/models/eval_context.rb	/^    def to_body$/;"	f	class:Flagr.EvalContext
+to_body	lib/rbflagr/models/eval_debug_log.rb	/^    def to_body$/;"	f	class:Flagr.EvalDebugLog
+to_body	lib/rbflagr/models/eval_result.rb	/^    def to_body$/;"	f	class:Flagr.EvalResult
+to_body	lib/rbflagr/models/flag.rb	/^    def to_body$/;"	f	class:Flagr.Flag
+to_body	lib/rbflagr/models/put_distributions_request.rb	/^    def to_body$/;"	f	class:Flagr.PutDistributionsRequest
+to_body	lib/rbflagr/models/put_flag_request.rb	/^    def to_body$/;"	f	class:Flagr.PutFlagRequest
+to_body	lib/rbflagr/models/put_segment_request.rb	/^    def to_body$/;"	f	class:Flagr.PutSegmentRequest
+to_body	lib/rbflagr/models/put_variant_request.rb	/^    def to_body$/;"	f	class:Flagr.PutVariantRequest
+to_body	lib/rbflagr/models/segment.rb	/^    def to_body$/;"	f	class:Flagr.Segment
+to_body	lib/rbflagr/models/segment_debug_log.rb	/^    def to_body$/;"	f	class:Flagr.SegmentDebugLog
+to_body	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def to_body$/;"	f	class:Flagr.SetFlagEnabledRequest
+to_body	lib/rbflagr/models/variant.rb	/^    def to_body$/;"	f	class:Flagr.Variant
+to_hash	lib/rbflagr/models/constraint.rb	/^    def to_hash$/;"	f	class:Flagr.Constraint
+to_hash	lib/rbflagr/models/create_constraint_request.rb	/^    def to_hash$/;"	f	class:Flagr.CreateConstraintRequest
+to_hash	lib/rbflagr/models/create_flag_request.rb	/^    def to_hash$/;"	f	class:Flagr.CreateFlagRequest
+to_hash	lib/rbflagr/models/create_segment_request.rb	/^    def to_hash$/;"	f	class:Flagr.CreateSegmentRequest
+to_hash	lib/rbflagr/models/create_variant_request.rb	/^    def to_hash$/;"	f	class:Flagr.CreateVariantRequest
+to_hash	lib/rbflagr/models/distribution.rb	/^    def to_hash$/;"	f	class:Flagr.Distribution
+to_hash	lib/rbflagr/models/error.rb	/^    def to_hash$/;"	f	class:Flagr.Error
+to_hash	lib/rbflagr/models/eval_context.rb	/^    def to_hash$/;"	f	class:Flagr.EvalContext
+to_hash	lib/rbflagr/models/eval_debug_log.rb	/^    def to_hash$/;"	f	class:Flagr.EvalDebugLog
+to_hash	lib/rbflagr/models/eval_result.rb	/^    def to_hash$/;"	f	class:Flagr.EvalResult
+to_hash	lib/rbflagr/models/flag.rb	/^    def to_hash$/;"	f	class:Flagr.Flag
+to_hash	lib/rbflagr/models/put_distributions_request.rb	/^    def to_hash$/;"	f	class:Flagr.PutDistributionsRequest
+to_hash	lib/rbflagr/models/put_flag_request.rb	/^    def to_hash$/;"	f	class:Flagr.PutFlagRequest
+to_hash	lib/rbflagr/models/put_segment_request.rb	/^    def to_hash$/;"	f	class:Flagr.PutSegmentRequest
+to_hash	lib/rbflagr/models/put_variant_request.rb	/^    def to_hash$/;"	f	class:Flagr.PutVariantRequest
+to_hash	lib/rbflagr/models/segment.rb	/^    def to_hash$/;"	f	class:Flagr.Segment
+to_hash	lib/rbflagr/models/segment_debug_log.rb	/^    def to_hash$/;"	f	class:Flagr.SegmentDebugLog
+to_hash	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def to_hash$/;"	f	class:Flagr.SetFlagEnabledRequest
+to_hash	lib/rbflagr/models/variant.rb	/^    def to_hash$/;"	f	class:Flagr.Variant
+to_s	lib/rbflagr/models/constraint.rb	/^    def to_s$/;"	f	class:Flagr.Constraint
+to_s	lib/rbflagr/models/create_constraint_request.rb	/^    def to_s$/;"	f	class:Flagr.CreateConstraintRequest
+to_s	lib/rbflagr/models/create_flag_request.rb	/^    def to_s$/;"	f	class:Flagr.CreateFlagRequest
+to_s	lib/rbflagr/models/create_segment_request.rb	/^    def to_s$/;"	f	class:Flagr.CreateSegmentRequest
+to_s	lib/rbflagr/models/create_variant_request.rb	/^    def to_s$/;"	f	class:Flagr.CreateVariantRequest
+to_s	lib/rbflagr/models/distribution.rb	/^    def to_s$/;"	f	class:Flagr.Distribution
+to_s	lib/rbflagr/models/error.rb	/^    def to_s$/;"	f	class:Flagr.Error
+to_s	lib/rbflagr/models/eval_context.rb	/^    def to_s$/;"	f	class:Flagr.EvalContext
+to_s	lib/rbflagr/models/eval_debug_log.rb	/^    def to_s$/;"	f	class:Flagr.EvalDebugLog
+to_s	lib/rbflagr/models/eval_result.rb	/^    def to_s$/;"	f	class:Flagr.EvalResult
+to_s	lib/rbflagr/models/flag.rb	/^    def to_s$/;"	f	class:Flagr.Flag
+to_s	lib/rbflagr/models/put_distributions_request.rb	/^    def to_s$/;"	f	class:Flagr.PutDistributionsRequest
+to_s	lib/rbflagr/models/put_flag_request.rb	/^    def to_s$/;"	f	class:Flagr.PutFlagRequest
+to_s	lib/rbflagr/models/put_segment_request.rb	/^    def to_s$/;"	f	class:Flagr.PutSegmentRequest
+to_s	lib/rbflagr/models/put_variant_request.rb	/^    def to_s$/;"	f	class:Flagr.PutVariantRequest
+to_s	lib/rbflagr/models/segment.rb	/^    def to_s$/;"	f	class:Flagr.Segment
+to_s	lib/rbflagr/models/segment_debug_log.rb	/^    def to_s$/;"	f	class:Flagr.SegmentDebugLog
+to_s	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def to_s$/;"	f	class:Flagr.SetFlagEnabledRequest
+to_s	lib/rbflagr/models/variant.rb	/^    def to_s$/;"	f	class:Flagr.Variant
+update_params_for_auth!	lib/rbflagr/api_client.rb	/^    def update_params_for_auth!(header_params, query_params, auth_names)$/;"	f	class:Flagr.ApiClient
+user_agent=	lib/rbflagr/api_client.rb	/^    def user_agent=(user_agent)$/;"	f	class:Flagr.ApiClient
+username	lib/rbflagr/configuration.rb	/^    attr_accessor :username$/;"	f	class:Flagr.Configuration
+username=	lib/rbflagr/configuration.rb	/^    attr_accessor :username$/;"	f	class:Flagr.Configuration
+valid?	lib/rbflagr/models/constraint.rb	/^      def valid?(value)$/;"	f	class:Flagr.Constraint.EnumAttributeValidator
+valid?	lib/rbflagr/models/constraint.rb	/^    def valid?$/;"	f	class:Flagr.Constraint
+valid?	lib/rbflagr/models/create_constraint_request.rb	/^    def valid?$/;"	f	class:Flagr.CreateConstraintRequest
+valid?	lib/rbflagr/models/create_flag_request.rb	/^    def valid?$/;"	f	class:Flagr.CreateFlagRequest
+valid?	lib/rbflagr/models/create_segment_request.rb	/^    def valid?$/;"	f	class:Flagr.CreateSegmentRequest
+valid?	lib/rbflagr/models/create_variant_request.rb	/^    def valid?$/;"	f	class:Flagr.CreateVariantRequest
+valid?	lib/rbflagr/models/distribution.rb	/^    def valid?$/;"	f	class:Flagr.Distribution
+valid?	lib/rbflagr/models/error.rb	/^    def valid?$/;"	f	class:Flagr.Error
+valid?	lib/rbflagr/models/eval_context.rb	/^    def valid?$/;"	f	class:Flagr.EvalContext
+valid?	lib/rbflagr/models/eval_debug_log.rb	/^    def valid?$/;"	f	class:Flagr.EvalDebugLog
+valid?	lib/rbflagr/models/eval_result.rb	/^    def valid?$/;"	f	class:Flagr.EvalResult
+valid?	lib/rbflagr/models/flag.rb	/^    def valid?$/;"	f	class:Flagr.Flag
+valid?	lib/rbflagr/models/put_distributions_request.rb	/^    def valid?$/;"	f	class:Flagr.PutDistributionsRequest
+valid?	lib/rbflagr/models/put_flag_request.rb	/^    def valid?$/;"	f	class:Flagr.PutFlagRequest
+valid?	lib/rbflagr/models/put_segment_request.rb	/^    def valid?$/;"	f	class:Flagr.PutSegmentRequest
+valid?	lib/rbflagr/models/put_variant_request.rb	/^    def valid?$/;"	f	class:Flagr.PutVariantRequest
+valid?	lib/rbflagr/models/segment.rb	/^    def valid?$/;"	f	class:Flagr.Segment
+valid?	lib/rbflagr/models/segment_debug_log.rb	/^    def valid?$/;"	f	class:Flagr.SegmentDebugLog
+valid?	lib/rbflagr/models/set_flag_enabled_request.rb	/^    def valid?$/;"	f	class:Flagr.SetFlagEnabledRequest
+valid?	lib/rbflagr/models/variant.rb	/^    def valid?$/;"	f	class:Flagr.Variant
+value	lib/rbflagr/models/constraint.rb	/^    attr_accessor :value$/;"	f	class:Flagr.Constraint
+value	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :value$/;"	f	class:Flagr.CreateConstraintRequest
+value=	lib/rbflagr/models/constraint.rb	/^    attr_accessor :value$/;"	f	class:Flagr.Constraint
+value=	lib/rbflagr/models/constraint.rb	/^    def value=(value)$/;"	f	class:Flagr.Constraint
+value=	lib/rbflagr/models/create_constraint_request.rb	/^    attr_accessor :value$/;"	f	class:Flagr.CreateConstraintRequest
+value=	lib/rbflagr/models/create_constraint_request.rb	/^    def value=(value)$/;"	f	class:Flagr.CreateConstraintRequest
+variant_attachment	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :variant_attachment$/;"	f	class:Flagr.EvalResult
+variant_attachment=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :variant_attachment$/;"	f	class:Flagr.EvalResult
+variant_id	lib/rbflagr/models/distribution.rb	/^    attr_accessor :variant_id$/;"	f	class:Flagr.Distribution
+variant_id	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :variant_id$/;"	f	class:Flagr.EvalResult
+variant_id=	lib/rbflagr/models/distribution.rb	/^    attr_accessor :variant_id$/;"	f	class:Flagr.Distribution
+variant_id=	lib/rbflagr/models/distribution.rb	/^    def variant_id=(variant_id)$/;"	f	class:Flagr.Distribution
+variant_id=	lib/rbflagr/models/eval_result.rb	/^    attr_accessor :variant_id$/;"	f	class:Flagr.EvalResult
+variant_id=	lib/rbflagr/models/eval_result.rb	/^    def variant_id=(variant_id)$/;"	f	class:Flagr.EvalResult
+variant_key	lib/rbflagr/models/distribution.rb	/^    attr_accessor :variant_key$/;"	f	class:Flagr.Distribution
+variant_key=	lib/rbflagr/models/distribution.rb	/^    attr_accessor :variant_key$/;"	f	class:Flagr.Distribution
+variant_key=	lib/rbflagr/models/distribution.rb	/^    def variant_key=(variant_key)$/;"	f	class:Flagr.Distribution
+variants	lib/rbflagr/models/flag.rb	/^    attr_accessor :variants$/;"	f	class:Flagr.Flag
+variants=	lib/rbflagr/models/flag.rb	/^    attr_accessor :variants$/;"	f	class:Flagr.Flag
+verify_ssl	lib/rbflagr/configuration.rb	/^    attr_accessor :verify_ssl$/;"	f	class:Flagr.Configuration
+verify_ssl=	lib/rbflagr/configuration.rb	/^    attr_accessor :verify_ssl$/;"	f	class:Flagr.Configuration
+verify_ssl_host	lib/rbflagr/configuration.rb	/^    attr_accessor :verify_ssl_host$/;"	f	class:Flagr.Configuration
+verify_ssl_host=	lib/rbflagr/configuration.rb	/^    attr_accessor :verify_ssl_host$/;"	f	class:Flagr.Configuration

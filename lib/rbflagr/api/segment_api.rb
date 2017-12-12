@@ -286,5 +286,69 @@ module Flagr
       end
       return data, status_code, headers
     end
+
+    # 
+    # 
+    # @param flag_id numeric ID of the flag
+    # @param body reorder segments
+    # @param [Hash] opts the optional parameters
+    # @return [nil]
+    def put_segments_reorder(flag_id, body, opts = {})
+      put_segments_reorder_with_http_info(flag_id, body, opts)
+      return nil
+    end
+
+    # 
+    # 
+    # @param flag_id numeric ID of the flag
+    # @param body reorder segments
+    # @param [Hash] opts the optional parameters
+    # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
+    def put_segments_reorder_with_http_info(flag_id, body, opts = {})
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "Calling API: SegmentApi.put_segments_reorder ..."
+      end
+      # verify the required parameter 'flag_id' is set
+      if @api_client.config.client_side_validation && flag_id.nil?
+        fail ArgumentError, "Missing the required parameter 'flag_id' when calling SegmentApi.put_segments_reorder"
+      end
+      if @api_client.config.client_side_validation && flag_id < 1
+        fail ArgumentError, 'invalid value for "flag_id" when calling SegmentApi.put_segments_reorder, must be greater than or equal to 1.'
+      end
+
+      # verify the required parameter 'body' is set
+      if @api_client.config.client_side_validation && body.nil?
+        fail ArgumentError, "Missing the required parameter 'body' when calling SegmentApi.put_segments_reorder"
+      end
+      # resource path
+      local_var_path = "/flags/{flagID}/segments/reorder".sub('{' + 'flagID' + '}', flag_id.to_s)
+
+      # query parameters
+      query_params = {}
+
+      # header parameters
+      header_params = {}
+      # HTTP header 'Accept' (if needed)
+      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      # HTTP header 'Content-Type'
+      header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
+
+      # form parameters
+      form_params = {}
+
+      # http body (model)
+      post_body = @api_client.object_to_http_body(body)
+      auth_names = []
+      data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
+        :header_params => header_params,
+        :query_params => query_params,
+        :form_params => form_params,
+        :body => post_body,
+        :auth_names => auth_names)
+      if @api_client.config.debugging
+        @api_client.config.logger.debug "API called: SegmentApi#put_segments_reorder\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+      end
+      return data, status_code, headers
+    end
   end
 end

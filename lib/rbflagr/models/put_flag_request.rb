@@ -17,18 +17,23 @@ module Flagr
   class PutFlagRequest
     attr_accessor :description
 
+    # enabled data records will get data logging in the metrics pipeline, for example, kafka.
+    attr_accessor :data_records_enabled
+
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'description' => :'description'
+        :'description' => :'description',
+        :'data_records_enabled' => :'dataRecordsEnabled'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'description' => :'String'
+        :'description' => :'String',
+        :'data_records_enabled' => :'BOOLEAN'
       }
     end
 
@@ -44,10 +49,14 @@ module Flagr
         self.description = attributes[:'description']
       end
 
+      if attributes.has_key?(:'dataRecordsEnabled')
+        self.data_records_enabled = attributes[:'dataRecordsEnabled']
+      end
+
     end
 
     # Show invalid properties with the reasons. Usually used together with valid?
-    # @return Array for valid properies with the reasons
+    # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
       if @description.nil?
@@ -88,7 +97,8 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          description == o.description
+          description == o.description &&
+          data_records_enabled == o.data_records_enabled
     end
 
     # @see the `==` method
@@ -100,7 +110,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [description].hash
+      [description, data_records_enabled].hash
     end
 
     # Builds the object from hash

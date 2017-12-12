@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**delete_segment**](SegmentApi.md#delete_segment) | **DELETE** /flags/{flagID}/segments/{segmentID} | 
 [**find_segments**](SegmentApi.md#find_segments) | **GET** /flags/{flagID}/segments | 
 [**put_segment**](SegmentApi.md#put_segment) | **PUT** /flags/{flagID}/segments/{segmentID} | 
+[**put_segments_reorder**](SegmentApi.md#put_segments_reorder) | **PUT** /flags/{flagID}/segments/reorder | 
 
 
 # **create_segment**
@@ -185,6 +186,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Segment**](Segment.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **put_segments_reorder**
+> put_segments_reorder(flag_id, body)
+
+
+
+### Example
+```ruby
+# load the gem
+require 'rbflagr'
+
+api_instance = Flagr::SegmentApi.new
+
+flag_id = 789 # Integer | numeric ID of the flag
+
+body = Flagr::PutSegmentReorderRequest.new # PutSegmentReorderRequest | reorder segments
+
+
+begin
+  api_instance.put_segments_reorder(flag_id, body)
+rescue Flagr::ApiError => e
+  puts "Exception when calling SegmentApi->put_segments_reorder: #{e}"
+end
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **flag_id** | **Integer**| numeric ID of the flag | 
+ **body** | [**PutSegmentReorderRequest**](PutSegmentReorderRequest.md)| reorder segments | 
+
+### Return type
+
+nil (empty response body)
 
 ### Authorization
 

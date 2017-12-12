@@ -14,21 +14,21 @@ require 'date'
 
 module Flagr
 
-  class Error
-    attr_accessor :message
+  class PutSegmentReorderRequest
+    attr_accessor :segment_i_ds
 
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'message' => :'message'
+        :'segment_i_ds' => :'segmentIDs'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'message' => :'String'
+        :'segment_i_ds' => :'Array<Integer>'
       }
     end
 
@@ -40,8 +40,10 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}){|(k,v), h| h[k.to_sym] = v}
 
-      if attributes.has_key?(:'message')
-        self.message = attributes[:'message']
+      if attributes.has_key?(:'segmentIDs')
+        if (value = attributes[:'segmentIDs']).is_a?(Array)
+          self.segment_i_ds = value
+        end
       end
 
     end
@@ -50,12 +52,8 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if @message.nil?
-        invalid_properties.push("invalid value for 'message', message cannot be nil.")
-      end
-
-      if @message.to_s.length < 1
-        invalid_properties.push("invalid value for 'message', the character length must be great than or equal to 1.")
+      if @segment_i_ds.nil?
+        invalid_properties.push("invalid value for 'segment_i_ds', segment_i_ds cannot be nil.")
       end
 
       return invalid_properties
@@ -64,23 +62,8 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if @message.nil?
-      return false if @message.to_s.length < 1
+      return false if @segment_i_ds.nil?
       return true
-    end
-
-    # Custom attribute writer method with validation
-    # @param [Object] message Value to be assigned
-    def message=(message)
-      if message.nil?
-        fail ArgumentError, "message cannot be nil"
-      end
-
-      if message.to_s.length < 1
-        fail ArgumentError, "invalid value for 'message', the character length must be great than or equal to 1."
-      end
-
-      @message = message
     end
 
     # Checks equality by comparing each attribute.
@@ -88,7 +71,7 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          message == o.message
+          segment_i_ds == o.segment_i_ds
     end
 
     # @see the `==` method
@@ -100,7 +83,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [message].hash
+      [segment_i_ds].hash
     end
 
     # Builds the object from hash

@@ -25,6 +25,9 @@ module Flagr
 
     attr_accessor :variants
 
+    # enabled data records will get data logging in the metrics pipeline, for example, kafka.
+    attr_accessor :data_records_enabled
+
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
@@ -33,7 +36,8 @@ module Flagr
         :'description' => :'description',
         :'enabled' => :'enabled',
         :'segments' => :'segments',
-        :'variants' => :'variants'
+        :'variants' => :'variants',
+        :'data_records_enabled' => :'dataRecordsEnabled'
       }
     end
 
@@ -44,7 +48,8 @@ module Flagr
         :'description' => :'String',
         :'enabled' => :'BOOLEAN',
         :'segments' => :'Array<Segment>',
-        :'variants' => :'Array<Variant>'
+        :'variants' => :'Array<Variant>',
+        :'data_records_enabled' => :'BOOLEAN'
       }
     end
 
@@ -80,10 +85,14 @@ module Flagr
         end
       end
 
+      if attributes.has_key?(:'dataRecordsEnabled')
+        self.data_records_enabled = attributes[:'dataRecordsEnabled']
+      end
+
     end
 
     # Show invalid properties with the reasons. Usually used together with valid?
-    # @return Array for valid properies with the reasons
+    # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
       if !@id.nil? && @id < 1
@@ -102,6 +111,10 @@ module Flagr
         invalid_properties.push("invalid value for 'enabled', enabled cannot be nil.")
       end
 
+      if @data_records_enabled.nil?
+        invalid_properties.push("invalid value for 'data_records_enabled', data_records_enabled cannot be nil.")
+      end
+
       return invalid_properties
     end
 
@@ -112,6 +125,7 @@ module Flagr
       return false if @description.nil?
       return false if @description.to_s.length < 1
       return false if @enabled.nil?
+      return false if @data_records_enabled.nil?
       return true
     end
 
@@ -149,7 +163,8 @@ module Flagr
           description == o.description &&
           enabled == o.enabled &&
           segments == o.segments &&
-          variants == o.variants
+          variants == o.variants &&
+          data_records_enabled == o.data_records_enabled
     end
 
     # @see the `==` method
@@ -161,7 +176,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [id, description, enabled, segments, variants].hash
+      [id, description, enabled, segments, variants, data_records_enabled].hash
     end
 
     # Builds the object from hash
