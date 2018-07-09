@@ -101,7 +101,7 @@ No authorization required
 
 
 # **find_flags**
-> Array&lt;Flag&gt; find_flags
+> Array&lt;Flag&gt; find_flags(opts)
 
 
 
@@ -112,8 +112,16 @@ require 'rbflagr'
 
 api_instance = Flagr::FlagApi.new
 
+opts = { 
+  limit: 789, # Integer | the numbers of flags to return
+  enabled: true, # BOOLEAN | return flags having given enabled status
+  description: 'description_example', # String | return flags exactly matching given description
+  description_like: 'description_like_example', # String | return flags partially matching given description
+  offset: 789 # Integer | return flags given the offset, it should usually set together with limit
+}
+
 begin
-  result = api_instance.find_flags
+  result = api_instance.find_flags(opts)
   p result
 rescue Flagr::ApiError => e
   puts "Exception when calling FlagApi->find_flags: #{e}"
@@ -121,7 +129,14 @@ end
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **Integer**| the numbers of flags to return | [optional] 
+ **enabled** | **BOOLEAN**| return flags having given enabled status | [optional] 
+ **description** | **String**| return flags exactly matching given description | [optional] 
+ **description_like** | **String**| return flags partially matching given description | [optional] 
+ **offset** | **Integer**| return flags given the offset, it should usually set together with limit | [optional] 
 
 ### Return type
 
