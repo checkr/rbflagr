@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **flag_id** | **Integer** |  | 
+**flag_key** | **String** |  | 
 **flag_snapshot_id** | **Integer** |  | [optional] 
 **segment_id** | **Integer** |  | 
 **variant_id** | **Integer** |  | 

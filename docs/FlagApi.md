@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**delete_flag**](FlagApi.md#delete_flag) | **DELETE** /flags/{flagID} | 
 [**find_flags**](FlagApi.md#find_flags) | **GET** /flags | 
 [**get_flag**](FlagApi.md#get_flag) | **GET** /flags/{flagID} | 
+[**get_flag_entity_types**](FlagApi.md#get_flag_entity_types) | **GET** /flags/entity_types | 
 [**get_flag_snapshots**](FlagApi.md#get_flag_snapshots) | **GET** /flags/{flagID}/snapshots | 
 [**put_flag**](FlagApi.md#put_flag) | **PUT** /flags/{flagID} | 
 [**set_flag_enabled**](FlagApi.md#set_flag_enabled) | **PUT** /flags/{flagID}/enabled | 
@@ -117,6 +118,7 @@ opts = {
   enabled: true, # BOOLEAN | return flags having given enabled status
   description: 'description_example', # String | return flags exactly matching given description
   description_like: 'description_like_example', # String | return flags partially matching given description
+  key: 'key_example', # String | return flags matching given key
   offset: 789 # Integer | return flags given the offset, it should usually set together with limit
 }
 
@@ -136,6 +138,7 @@ Name | Type | Description  | Notes
  **enabled** | **BOOLEAN**| return flags having given enabled status | [optional] 
  **description** | **String**| return flags exactly matching given description | [optional] 
  **description_like** | **String**| return flags partially matching given description | [optional] 
+ **key** | **String**| return flags matching given key | [optional] 
  **offset** | **Integer**| return flags given the offset, it should usually set together with limit | [optional] 
 
 ### Return type
@@ -185,6 +188,44 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Flag**](Flag.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+
+
+# **get_flag_entity_types**
+> Array&lt;String&gt; get_flag_entity_types
+
+
+
+### Example
+```ruby
+# load the gem
+require 'rbflagr'
+
+api_instance = Flagr::FlagApi.new
+
+begin
+  result = api_instance.get_flag_entity_types
+  p result
+rescue Flagr::ApiError => e
+  puts "Exception when calling FlagApi->get_flag_entity_types: #{e}"
+end
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**Array&lt;String&gt;**
 
 ### Authorization
 

@@ -4,13 +4,15 @@ All URIs are relative to *http://localhost/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**health_get**](HealthApi.md#health_get) | **GET** /health | 
+[**get_health**](HealthApi.md#get_health) | **GET** /health | 
 
 
-# **health_get**
-> health_get
+# **get_health**
+> get_health
 
 
+
+Check if Flagr is healthy
 
 ### Example
 ```ruby
@@ -20,9 +22,9 @@ require 'rbflagr'
 api_instance = Flagr::HealthApi.new
 
 begin
-  api_instance.health_get
+  api_instance.get_health
 rescue Flagr::ApiError => e
-  puts "Exception when calling HealthApi->health_get: #{e}"
+  puts "Exception when calling HealthApi->get_health: #{e}"
 end
 ```
 
