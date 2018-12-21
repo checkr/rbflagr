@@ -4,6 +4,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** |  | 
-**attachment** | **Object** |  | 
+**attachment** | **Object** |  | [optional] 
 
 

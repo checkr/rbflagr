@@ -13,29 +13,29 @@ Swagger Codegen version: 2.4.0-SNAPSHOT
 require 'uri'
 
 module Flagr
-  class HealthApi
+  class ExportApi
     attr_accessor :api_client
 
     def initialize(api_client = ApiClient.default)
       @api_client = api_client
     end
-    # Check if Flagr is healthy
+    # Export sqlite3 format of the db dump, which is converted from the main database.
     # @param [Hash] opts the optional parameters
-    # @return [nil]
-    def get_health(opts = {})
-      get_health_with_http_info(opts)
-      nil
+    # @return [File]
+    def get_export_sq_lite(opts = {})
+      data, _status_code, _headers = get_export_sq_lite_with_http_info(opts)
+      data
     end
 
-    # Check if Flagr is healthy
+    # Export sqlite3 format of the db dump, which is converted from the main database.
     # @param [Hash] opts the optional parameters
-    # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
-    def get_health_with_http_info(opts = {})
+    # @return [Array<(File, Fixnum, Hash)>] File data, response status code and response headers
+    def get_export_sq_lite_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug 'Calling API: HealthApi.get_health ...'
+        @api_client.config.logger.debug 'Calling API: ExportApi.get_export_sq_lite ...'
       end
       # resource path
-      local_var_path = '/health'
+      local_var_path = '/export/sqlite'
 
       # query parameters
       query_params = {}
@@ -43,7 +43,7 @@ module Flagr
       # header parameters
       header_params = {}
       # HTTP header 'Accept' (if needed)
-      header_params['Accept'] = @api_client.select_header_accept(['application/json'])
+      header_params['Accept'] = @api_client.select_header_accept(['application/octet-stream'])
       # HTTP header 'Content-Type'
       header_params['Content-Type'] = @api_client.select_header_content_type(['application/json'])
 
@@ -58,9 +58,10 @@ module Flagr
         :query_params => query_params,
         :form_params => form_params,
         :body => post_body,
-        :auth_names => auth_names)
+        :auth_names => auth_names,
+        :return_type => 'File')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: HealthApi#get_health\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: ExportApi#get_export_sq_lite\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
