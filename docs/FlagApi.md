@@ -119,7 +119,8 @@ opts = {
   description: 'description_example', # String | return flags exactly matching given description
   description_like: 'description_like_example', # String | return flags partially matching given description
   key: 'key_example', # String | return flags matching given key
-  offset: 789 # Integer | return flags given the offset, it should usually set together with limit
+  offset: 789, # Integer | return flags given the offset, it should usually set together with limit
+  preload: true # BOOLEAN | return flags with preloaded segments and variants
 }
 
 begin
@@ -140,6 +141,7 @@ Name | Type | Description  | Notes
  **description_like** | **String**| return flags partially matching given description | [optional] 
  **key** | **String**| return flags matching given key | [optional] 
  **offset** | **Integer**| return flags given the offset, it should usually set together with limit | [optional] 
+ **preload** | **BOOLEAN**| return flags with preloaded segments and variants | [optional] 
 
 ### Return type
 
