@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **entity_type** | **String** | it will overwrite entityType into evaluation logs if it&#39;s not empty | [optional] 
 **enabled** | **BOOLEAN** |  | [optional] 
 **key** | **String** |  | [optional] 
+**notes** | **String** |  | [optional] 
 
 

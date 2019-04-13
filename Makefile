@@ -1,6 +1,6 @@
 # make sure swagger.yaml and swagger_ruby.json is update-to-date
 gen:
-	docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli generate \
+	docker run --rm -v ${PWD}:/local swaggerapi/swagger-codegen-cli:2.4.4 generate \
 		-i /local/swagger.yaml \
 		-l ruby \
 		-o /local/ -c /local/swagger_ruby.json
