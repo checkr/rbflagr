@@ -13,28 +13,20 @@ Swagger Codegen version: 2.4.14
 require 'date'
 
 module Flagr
-  class Variant
-    attr_accessor :id
-
-    attr_accessor :key
-
-    attr_accessor :attachment
+  class CreateTagRequest
+    attr_accessor :value
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'id' => :'id',
-        :'key' => :'key',
-        :'attachment' => :'attachment'
+        :'value' => :'value'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'id' => :'Integer',
-        :'key' => :'String',
-        :'attachment' => :'Object'
+        :'value' => :'String'
       }
     end
 
@@ -46,16 +38,8 @@ module Flagr
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h| h[k.to_sym] = v }
 
-      if attributes.has_key?(:'id')
-        self.id = attributes[:'id']
-      end
-
-      if attributes.has_key?(:'key')
-        self.key = attributes[:'key']
-      end
-
-      if attributes.has_key?(:'attachment')
-        self.attachment = attributes[:'attachment']
+      if attributes.has_key?(:'value')
+        self.value = attributes[:'value']
       end
     end
 
@@ -63,16 +47,12 @@ module Flagr
     # @return Array for valid properties with the reasons
     def list_invalid_properties
       invalid_properties = Array.new
-      if !@id.nil? && @id < 1
-        invalid_properties.push('invalid value for "id", must be greater than or equal to 1.')
+      if @value.nil?
+        invalid_properties.push('invalid value for "value", value cannot be nil.')
       end
 
-      if @key.nil?
-        invalid_properties.push('invalid value for "key", key cannot be nil.')
-      end
-
-      if @key.to_s.length < 1
-        invalid_properties.push('invalid value for "key", the character length must be great than or equal to 1.')
+      if @value.to_s.length < 1
+        invalid_properties.push('invalid value for "value", the character length must be great than or equal to 1.')
       end
 
       invalid_properties
@@ -81,34 +61,23 @@ module Flagr
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      return false if !@id.nil? && @id < 1
-      return false if @key.nil?
-      return false if @key.to_s.length < 1
+      return false if @value.nil?
+      return false if @value.to_s.length < 1
       true
     end
 
     # Custom attribute writer method with validation
-    # @param [Object] id Value to be assigned
-    def id=(id)
-      if !id.nil? && id < 1
-        fail ArgumentError, 'invalid value for "id", must be greater than or equal to 1.'
+    # @param [Object] value Value to be assigned
+    def value=(value)
+      if value.nil?
+        fail ArgumentError, 'value cannot be nil'
       end
 
-      @id = id
-    end
-
-    # Custom attribute writer method with validation
-    # @param [Object] key Value to be assigned
-    def key=(key)
-      if key.nil?
-        fail ArgumentError, 'key cannot be nil'
+      if value.to_s.length < 1
+        fail ArgumentError, 'invalid value for "value", the character length must be great than or equal to 1.'
       end
 
-      if key.to_s.length < 1
-        fail ArgumentError, 'invalid value for "key", the character length must be great than or equal to 1.'
-      end
-
-      @key = key
+      @value = value
     end
 
     # Checks equality by comparing each attribute.
@@ -116,9 +85,7 @@ module Flagr
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
-          id == o.id &&
-          key == o.key &&
-          attachment == o.attachment
+          value == o.value
     end
 
     # @see the `==` method
@@ -130,7 +97,7 @@ module Flagr
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [id, key, attachment].hash
+      [value].hash
     end
 
     # Builds the object from hash

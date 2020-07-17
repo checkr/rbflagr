@@ -117,6 +117,7 @@ opts = {
   limit: 789, # Integer | the numbers of flags to return
   enabled: true, # BOOLEAN | return flags having given enabled status
   description: 'description_example', # String | return flags exactly matching given description
+  tags: 'tags_example', # String | return flags with the given tags (comma separated)
   description_like: 'description_like_example', # String | return flags partially matching given description
   key: 'key_example', # String | return flags matching given key
   offset: 789, # Integer | return flags given the offset, it should usually set together with limit
@@ -138,6 +139,7 @@ Name | Type | Description  | Notes
  **limit** | **Integer**| the numbers of flags to return | [optional] 
  **enabled** | **BOOLEAN**| return flags having given enabled status | [optional] 
  **description** | **String**| return flags exactly matching given description | [optional] 
+ **tags** | **String**| return flags with the given tags (comma separated) | [optional] 
  **description_like** | **String**| return flags partially matching given description | [optional] 
  **key** | **String**| return flags matching given key | [optional] 
  **offset** | **Integer**| return flags given the offset, it should usually set together with limit | [optional] 

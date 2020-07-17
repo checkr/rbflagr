@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **enable_debug** | **BOOLEAN** |  | [optional] 
 **flag_id** | **Integer** | flagID | [optional] 
 **flag_key** | **String** | flagKey. flagID or flagKey will resolve to the same flag. Either works. | [optional] 
+**flag_tags** | **Array&lt;String&gt;** | flagTags. flagTags looks up flags by tag. Either works. | [optional] 
 
 
