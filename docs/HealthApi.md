@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_health**
-> get_health
+> Health get_health
 
 
 
@@ -22,7 +22,8 @@ require 'rbflagr'
 api_instance = Flagr::HealthApi.new
 
 begin
-  api_instance.get_health
+  result = api_instance.get_health
+  p result
 rescue Flagr::ApiError => e
   puts "Exception when calling HealthApi->get_health: #{e}"
 end
@@ -33,7 +34,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-nil (empty response body)
+[**Health**](Health.md)
 
 ### Authorization
 
