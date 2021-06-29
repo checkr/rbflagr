@@ -10,7 +10,7 @@ Swagger Codegen version: 2.4.14
 
 =end
 
-require 'cgi'
+require 'uri'
 
 module Flagr
   class Configuration
@@ -175,7 +175,8 @@ module Flagr
 
     def base_url
       url = "#{scheme}://#{[host, base_path].join('/').gsub(/\/+/, '/')}".sub(/\/+\z/, '')
-      CGI.escape(url)
+      parser = URI::Parser.new
+      parser.escape(url)
     end
 
     # Gets API key (with prefix if set).

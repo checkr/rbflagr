@@ -10,12 +10,12 @@ Swagger Codegen version: 2.4.14
 
 =end
 
-require 'cgi'
 require 'date'
 require 'json'
 require 'logger'
 require 'tempfile'
 require 'typhoeus'
+require 'uri'
 
 module Flagr
   class ApiClient
@@ -265,7 +265,8 @@ module Flagr
     def build_request_url(path)
       # Add leading and trailing slashes to path
       path = "/#{path}".gsub(/\/+/, '/')
-      CGI.escape(@config.base_url + path)
+      parser = URI::Parser.new
+      parser.escape(@config.base_url + path)
     end
 
     # Builds the HTTP request body
