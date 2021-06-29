@@ -1,7 +1,7 @@
 =begin
 #Flagr
 
-#Flagr is a feature flagging, A/B testing and dynamic configuration microservice. The base path for all the APIs is \"/api/v1\". 
+#Flagr is a feature flagging, A/B testing and dynamic configuration microservice. The base path for all the APIs is \"/api/v1\".
 
 OpenAPI spec version: 1.1.10
 
@@ -11,5 +11,5 @@ Swagger Codegen version: 2.4.14
 =end
 
 module Flagr
-  VERSION = '1.1.10'
+  VERSION = '1.2.0'
 end

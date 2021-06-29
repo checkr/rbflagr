@@ -1,7 +1,7 @@
 =begin
 #Flagr
 
-#Flagr is a feature flagging, A/B testing and dynamic configuration microservice. The base path for all the APIs is \"/api/v1\". 
+#Flagr is a feature flagging, A/B testing and dynamic configuration microservice. The base path for all the APIs is \"/api/v1\".
 
 OpenAPI spec version: 1.1.10
 
@@ -10,7 +10,7 @@ Swagger Codegen version: 2.4.14
 
 =end
 
-require 'uri'
+require 'cgi'
 
 module Flagr
   class Configuration
@@ -175,7 +175,7 @@ module Flagr
 
     def base_url
       url = "#{scheme}://#{[host, base_path].join('/').gsub(/\/+/, '/')}".sub(/\/+\z/, '')
-      URI.encode(url)
+      CGI.escape(url)
     end
 
     # Gets API key (with prefix if set).
